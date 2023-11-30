@@ -121,6 +121,22 @@
         "documentation": {}
     },
     {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
         "label": "models",
         "importPath": "django.db",
         "description": "django.db",
@@ -411,6 +427,15 @@
         "documentation": {}
     },
     {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "novels.migrations.0004_chapter",
+        "description": "novels.migrations.0004_chapter",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('novels', '0003_remove_category_novel_novel_category'),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Chapter',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('title', models.CharField(max_length=200)),",
+        "detail": "novels.migrations.0004_chapter",
+        "documentation": {}
+    },
+    {
         "label": "NovelsConfig",
         "kind": 6,
         "importPath": "novels.apps",
@@ -424,7 +449,16 @@
         "kind": 6,
         "importPath": "novels.models",
         "description": "novels.models",
-        "peekOfCode": "class Category(models.Model):\n    name = models.CharField(max_length=200)\nclass Novel(models.Model):\n    title = models.CharField(max_length=200)\n    published_date = models.DateTimeField(\"date published\")\n    year= models.IntegerField(default=0)\n    status= models.BooleanField(default=True)\n    category = models.ForeignKey(Category, on_delete=models.CASCADE,null = True, blank= True)\n    # votes = models.IntegerField(default=0)",
+        "peekOfCode": "class Category(models.Model):\n    name = models.CharField(max_length=200)\nclass Chapter(models.Model):\n    title = models.CharField(max_length=200)\n    content =models.CharField(max_length=2000)\nclass Novel(models.Model):\n    title = models.CharField(max_length=200)\n    published_date = models.DateTimeField(\"date published\")\n    year= models.IntegerField(default=0)\n    status= models.BooleanField(default=True)",
+        "detail": "novels.models",
+        "documentation": {}
+    },
+    {
+        "label": "Chapter",
+        "kind": 6,
+        "importPath": "novels.models",
+        "description": "novels.models",
+        "peekOfCode": "class Chapter(models.Model):\n    title = models.CharField(max_length=200)\n    content =models.CharField(max_length=2000)\nclass Novel(models.Model):\n    title = models.CharField(max_length=200)\n    published_date = models.DateTimeField(\"date published\")\n    year= models.IntegerField(default=0)\n    status= models.BooleanField(default=True)\n    category = models.ForeignKey(Category, on_delete=models.CASCADE,null = True, blank= True)\n    # votes = models.IntegerField(default=0)",
         "detail": "novels.models",
         "documentation": {}
     },

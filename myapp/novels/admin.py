@@ -1,7 +1,8 @@
 from django.contrib import admin
 
 # Register your models here.
-from .models import Novel,Category
+from .models import *
 
 admin.site.register(Novel)
 admin.site.register(Category)
+admin.site.register(Chapter)
