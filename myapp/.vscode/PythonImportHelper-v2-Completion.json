@@ -57,6 +57,14 @@
         "documentation": {}
     },
     {
+        "label": "reverse",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
         "label": "path",
         "importPath": "django.urls",
         "description": "django.urls",
@@ -175,6 +183,22 @@
         "description": "django.test",
         "isExtraImport": true,
         "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "Client",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "timezone",
+        "importPath": "django.utils",
+        "description": "django.utils",
+        "isExtraImport": true,
+        "detail": "django.utils",
         "documentation": {}
     },
     {
@@ -494,6 +518,42 @@
         "description": "novels.models",
         "peekOfCode": "class Novel(models.Model):\n    title = models.CharField(max_length=200)\n    published_date = models.DateTimeField(\"date published\")\n    year= models.IntegerField(default=0)\n    status= models.BooleanField(default=True)\n    category = models.ForeignKey(Category, on_delete=models.CASCADE,null = True, blank= True)\n    # votes = models.IntegerField(default=0)",
         "detail": "novels.models",
+        "documentation": {}
+    },
+    {
+        "label": "CategoryModelTest",
+        "kind": 6,
+        "importPath": "novels.tests",
+        "description": "novels.tests",
+        "peekOfCode": "class CategoryModelTest(TestCase):\n    def test_create_category(self):\n        category = Category.objects.create(name=\"Adventure\")\n        self.assertEqual(category.name, \"Adventure\")\n    def test_category_name_max_length(self):\n        # Test that the name field enforces the maximum length of 200 characters\n        category = Category.objects.create(name=\"A\" * 201)  # exceeding the limit\n        self.assertLessEqual(len(category.name), 200)\n    # Add more Category model tests as needed...\nclass ChapterModelTest(TestCase):",
+        "detail": "novels.tests",
+        "documentation": {}
+    },
+    {
+        "label": "ChapterModelTest",
+        "kind": 6,
+        "importPath": "novels.tests",
+        "description": "novels.tests",
+        "peekOfCode": "class ChapterModelTest(TestCase):\n    def test_create_chapter(self):\n        chapter = Chapter.objects.create(title=\"Chapter 1\", content=\"Lorem ipsum...\")\n        self.assertEqual(chapter.title, \"Chapter 1\")\n        self.assertEqual(chapter.content, \"Lorem ipsum...\")\n    # Add more Chapter model tests as needed...\nclass NovelModelTest(TestCase):\n    def setUp(self):\n        self.category = Category.objects.create(name=\"Fantasy\")\n    def test_create_novel(self):",
+        "detail": "novels.tests",
+        "documentation": {}
+    },
+    {
+        "label": "NovelModelTest",
+        "kind": 6,
+        "importPath": "novels.tests",
+        "description": "novels.tests",
+        "peekOfCode": "class NovelModelTest(TestCase):\n    def setUp(self):\n        self.category = Category.objects.create(name=\"Fantasy\")\n    def test_create_novel(self):\n        novel = Novel.objects.create(\n            title=\"The Adventure Begins\",\n            published_date=timezone.now(),\n            year=2023,\n            status=True,\n            category=self.category,",
+        "detail": "novels.tests",
+        "documentation": {}
+    },
+    {
+        "label": "NovelViewsTest",
+        "kind": 6,
+        "importPath": "novels.tests",
+        "description": "novels.tests",
+        "peekOfCode": "class NovelViewsTest(TestCase):\n    def setUp(self):\n        self.client = Client()\n        self.category = Category.objects.create(name=\"Fantasy\")\n    def test_novel_list_view(self):\n        response = self.client.get(reverse(\"novels:index\"))\n        self.assertEqual(response.status_code, 200)\n        self.assertContains(\n            response, \"No novels available.\"\n        )  # Assuming you have a message for an empty list",
+        "detail": "novels.tests",
         "documentation": {}
     },
     {
