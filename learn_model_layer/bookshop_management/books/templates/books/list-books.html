@@ -1,0 +1,20 @@
+<!-- posts/templates/posts/list-posts.html -->
+
+{% extends "layouts/layout.html" %}
+{% block title %}
+    List Book | {{ block.super }}
+{% endblock title %}
+{% block content %}
+  <h4><small>List Books</small></h4>
+  <hr>
+  {% if books %}
+    {% for book in books %}
+    <h2>{{book.title}}</h2>
+    <h5><span class="glyphicon glyphicon-time"></span> Post at {{book.publish_date}}</h5>
+    <p>{{book.content}}</p>
+    <br><br>
+    {% endfor %}
+  {% else %}
+    No song.
+  {% endif %}
+{% endblock content %}
