@@ -476,6 +476,33 @@
         "documentation": {}
     },
     {
+        "label": "NovelAdmin",
+        "kind": 6,
+        "importPath": "novels.admin",
+        "description": "novels.admin",
+        "peekOfCode": "class NovelAdmin(admin.ModelAdmin):\n    fields = [\"title\", \"published_date\", \"year\", \"status\", \"category\"]\n    list_display = [\"title\", \"published_date\", \"year\", \"status\", \"category\"]\n    # def published_recently(self, obj):\n    #     return obj.was_published_recently()\n    # published_recently.boolean = True\n    # published_recently.short_description = \"Published recently?\"\n    # list_filter = (\"status\", \"category\")\n    # search_fields = (\"title\", \"category__name\")\n    # date_hierarchy = \"published_date\"",
+        "detail": "novels.admin",
+        "documentation": {}
+    },
+    {
+        "label": "CategoryAdmin",
+        "kind": 6,
+        "importPath": "novels.admin",
+        "description": "novels.admin",
+        "peekOfCode": "class CategoryAdmin(admin.ModelAdmin):\n    list_display = (\"name\",)\n    search_fields = (\"name\",)\nclass ChapterAdmin(admin.ModelAdmin):\n    list_display = [\"title\", \"content\"]\n    search_fields = [\"title\", \"content\"]\nadmin.site.register(Novel,NovelAdmin)\nadmin.site.register(Category)\nadmin.site.register(Chapter,ChapterAdmin)",
+        "detail": "novels.admin",
+        "documentation": {}
+    },
+    {
+        "label": "ChapterAdmin",
+        "kind": 6,
+        "importPath": "novels.admin",
+        "description": "novels.admin",
+        "peekOfCode": "class ChapterAdmin(admin.ModelAdmin):\n    list_display = [\"title\", \"content\"]\n    search_fields = [\"title\", \"content\"]\nadmin.site.register(Novel,NovelAdmin)\nadmin.site.register(Category)\nadmin.site.register(Chapter,ChapterAdmin)",
+        "detail": "novels.admin",
+        "documentation": {}
+    },
+    {
         "label": "NovelsConfig",
         "kind": 6,
         "importPath": "novels.apps",
@@ -507,7 +534,7 @@
         "kind": 6,
         "importPath": "novels.models",
         "description": "novels.models",
-        "peekOfCode": "class Chapter(models.Model):\n    title = models.CharField(max_length=200)\n    content =models.CharField(max_length=2000)\nclass Novel(models.Model):\n    title = models.CharField(max_length=200)\n    published_date = models.DateTimeField(\"date published\")\n    year= models.IntegerField(default=0)\n    status= models.BooleanField(default=True)\n    category = models.ForeignKey(Category, on_delete=models.CASCADE,null = True, blank= True)\n    # votes = models.IntegerField(default=0)",
+        "peekOfCode": "class Chapter(models.Model):\n    title = models.CharField(max_length=200)\n    content =models.CharField(max_length=2000)\nclass Novel(models.Model):\n    title = models.CharField(max_length=200)\n    published_date = models.DateTimeField(\"date published\")\n    year= models.IntegerField(default=0)\n    status= models.BooleanField(default=True)\n    category = models.ForeignKey(Category, on_delete=models.CASCADE,null = True, blank= True)",
         "detail": "novels.models",
         "documentation": {}
     },
@@ -516,7 +543,7 @@
         "kind": 6,
         "importPath": "novels.models",
         "description": "novels.models",
-        "peekOfCode": "class Novel(models.Model):\n    title = models.CharField(max_length=200)\n    published_date = models.DateTimeField(\"date published\")\n    year= models.IntegerField(default=0)\n    status= models.BooleanField(default=True)\n    category = models.ForeignKey(Category, on_delete=models.CASCADE,null = True, blank= True)\n    # votes = models.IntegerField(default=0)",
+        "peekOfCode": "class Novel(models.Model):\n    title = models.CharField(max_length=200)\n    published_date = models.DateTimeField(\"date published\")\n    year= models.IntegerField(default=0)\n    status= models.BooleanField(default=True)\n    category = models.ForeignKey(Category, on_delete=models.CASCADE,null = True, blank= True)",
         "detail": "novels.models",
         "documentation": {}
     },
