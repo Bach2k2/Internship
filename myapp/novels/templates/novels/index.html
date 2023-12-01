@@ -4,6 +4,10 @@
         <li><a href="{% url 'novels:detail' novel.id %}">{{ novel.title }}</a></li>
     {% endfor %}
     </ul>
+    <div class="button">
+        <a href="{% url 'novels:create_novel' %}">Add more novels</a>
+        {% comment %} <button type="button" ></button> {% endcomment %}
+    </div>
 {% else %}
     <p>No novels are available.</p>
 {% endif %} 

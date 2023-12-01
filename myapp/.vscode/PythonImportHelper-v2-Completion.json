@@ -162,6 +162,14 @@
         "documentation": {}
     },
     {
+        "label": "forms",
+        "importPath": "django",
+        "description": "django",
+        "isExtraImport": true,
+        "detail": "django",
+        "documentation": {}
+    },
+    {
         "label": "TestCase",
         "importPath": "django.test",
         "description": "django.test",
@@ -187,6 +195,14 @@
     },
     {
         "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "redirect",
         "importPath": "django.shortcuts",
         "description": "django.shortcuts",
         "isExtraImport": true,
@@ -445,6 +461,15 @@
         "documentation": {}
     },
     {
+        "label": "NovelForm",
+        "kind": 6,
+        "importPath": "novels.forms",
+        "description": "novels.forms",
+        "peekOfCode": "class NovelForm(forms.Form):\n    title = forms.CharField(max_length=200)\n    published_date = forms.DateTimeField(label=\"Date Published\",widget=forms.DateInput(attrs={'type': 'date'})) # dung widget de tao form\n    year = forms.IntegerField(initial=0)\n    status = forms.BooleanField(initial=True)\n    # category = forms.ModelChoiceField(queryset=Category.objects.values_list('name', flat=True), empty_label=\"Select a category\")\n    category = forms.ModelChoiceField(queryset=Category.objects.all(), empty_label=\"Select a category\")",
+        "detail": "novels.forms",
+        "documentation": {}
+    },
+    {
         "label": "Category",
         "kind": 6,
         "importPath": "novels.models",
@@ -476,7 +501,7 @@
         "kind": 5,
         "importPath": "novels.urls",
         "description": "novels.urls",
-        "peekOfCode": "app_name = \"novels\"\nurlpatterns = [\n    path(\"\", views.index, name=\"index\"),\n    path(\"<int:novel_id>/\", views.detail, name=\"detail\"),      # ex: /novels/5/\n    path(\"add/\", views.vote, name=\"vote\"),\n]",
+        "peekOfCode": "app_name = \"novels\"\nurlpatterns = [\n    path(\"\", views.index, name=\"index\"),\n    path(\"<int:novel_id>/\", views.detail, name=\"detail\"),      # ex: /novels/5/\n    path(\"create_novel\", views.create_novel, name=\"create_novel\"),\n]",
         "detail": "novels.urls",
         "documentation": {}
     },
@@ -485,7 +510,7 @@
         "kind": 5,
         "importPath": "novels.urls",
         "description": "novels.urls",
-        "peekOfCode": "urlpatterns = [\n    path(\"\", views.index, name=\"index\"),\n    path(\"<int:novel_id>/\", views.detail, name=\"detail\"),      # ex: /novels/5/\n    path(\"add/\", views.vote, name=\"vote\"),\n]",
+        "peekOfCode": "urlpatterns = [\n    path(\"\", views.index, name=\"index\"),\n    path(\"<int:novel_id>/\", views.detail, name=\"detail\"),      # ex: /novels/5/\n    path(\"create_novel\", views.create_novel, name=\"create_novel\"),\n]",
         "detail": "novels.urls",
         "documentation": {}
     },
@@ -503,16 +528,16 @@
         "kind": 2,
         "importPath": "novels.views",
         "description": "novels.views",
-        "peekOfCode": "def detail(request, novel_id):\n    novel = get_object_or_404(Novel, pk=novel_id)\n    # return HttpResponse(\"You're looking at novel %s.\" % novel_id)\n    return render(request, \"novels/detail.html\", {\"novel\": novel})\n# def results(request, question_id):\n#     response = \"You're looking at the results of question %s.\"\n#     return HttpResponse(response % question_id)\ndef vote(request, question_id):\n    return HttpResponse(\"You're voting on question %s.\" % question_id)",
+        "peekOfCode": "def detail(request, novel_id):\n    novel = get_object_or_404(Novel, pk=novel_id)\n    # return HttpResponse(\"You're looking at novel %s.\" % novel_id)\n    return render(request, \"novels/detail.html\", {\"novel\": novel})\ndef create_novel(request):\n    # print(\"hehe\")\n    if request.method == 'POST':\n        form = NovelForm(request.POST)\n        if form.is_valid(): \n            # Novel.objects.create(form); ",
         "detail": "novels.views",
         "documentation": {}
     },
     {
-        "label": "vote",
+        "label": "create_novel",
         "kind": 2,
         "importPath": "novels.views",
         "description": "novels.views",
-        "peekOfCode": "def vote(request, question_id):\n    return HttpResponse(\"You're voting on question %s.\" % question_id)",
+        "peekOfCode": "def create_novel(request):\n    # print(\"hehe\")\n    if request.method == 'POST':\n        form = NovelForm(request.POST)\n        if form.is_valid(): \n            # Novel.objects.create(form); \n            title = form.cleaned_data['title']\n            published_date = form.cleaned_data['published_date']\n            year = form.cleaned_data['year']\n            status = form.cleaned_data['status']",
         "detail": "novels.views",
         "documentation": {}
     },

@@ -1,0 +1,6 @@
+<!-- create_novel.html -->
+<form method="post" action="{% url 'novels:create_novel' %}">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Submit</button>
+</form>
