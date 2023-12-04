@@ -1,0 +1,515 @@
+[
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "get_asgi_application",
+        "importPath": "django.core.asgi",
+        "description": "django.core.asgi",
+        "isExtraImport": true,
+        "detail": "django.core.asgi",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "include",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "get_wsgi_application",
+        "importPath": "django.core.wsgi",
+        "description": "django.core.wsgi",
+        "isExtraImport": true,
+        "detail": "django.core.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "get_all_lexers",
+        "importPath": "pygments.lexers",
+        "description": "pygments.lexers",
+        "isExtraImport": true,
+        "detail": "pygments.lexers",
+        "documentation": {}
+    },
+    {
+        "label": "get_all_styles",
+        "importPath": "pygments.styles",
+        "description": "pygments.styles",
+        "isExtraImport": true,
+        "detail": "pygments.styles",
+        "documentation": {}
+    },
+    {
+        "label": "serializers",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "Snippet",
+        "importPath": "snippets.models",
+        "description": "snippets.models",
+        "isExtraImport": true,
+        "detail": "snippets.models",
+        "documentation": {}
+    },
+    {
+        "label": "LANGUAGE_CHOICES",
+        "importPath": "snippets.models",
+        "description": "snippets.models",
+        "isExtraImport": true,
+        "detail": "snippets.models",
+        "documentation": {}
+    },
+    {
+        "label": "STYLE_CHOICES",
+        "importPath": "snippets.models",
+        "description": "snippets.models",
+        "isExtraImport": true,
+        "detail": "snippets.models",
+        "documentation": {}
+    },
+    {
+        "label": "Snippet",
+        "importPath": "snippets.models",
+        "description": "snippets.models",
+        "isExtraImport": true,
+        "detail": "snippets.models",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "views",
+        "importPath": "snippets",
+        "description": "snippets",
+        "isExtraImport": true,
+        "detail": "snippets",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "HttpResponse",
+        "importPath": "django.http",
+        "description": "django.http",
+        "isExtraImport": true,
+        "detail": "django.http",
+        "documentation": {}
+    },
+    {
+        "label": "JsonResponse",
+        "importPath": "django.http",
+        "description": "django.http",
+        "isExtraImport": true,
+        "detail": "django.http",
+        "documentation": {}
+    },
+    {
+        "label": "csrf_exempt",
+        "importPath": "django.views.decorators.csrf",
+        "description": "django.views.decorators.csrf",
+        "isExtraImport": true,
+        "detail": "django.views.decorators.csrf",
+        "documentation": {}
+    },
+    {
+        "label": "JSONParser",
+        "importPath": "rest_framework.parsers",
+        "description": "rest_framework.parsers",
+        "isExtraImport": true,
+        "detail": "rest_framework.parsers",
+        "documentation": {}
+    },
+    {
+        "label": "SnippetSerializer",
+        "importPath": "snippets.serializers",
+        "description": "snippets.serializers",
+        "isExtraImport": true,
+        "detail": "snippets.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "application",
+        "kind": 5,
+        "importPath": "myproject.myproject.asgi",
+        "description": "myproject.myproject.asgi",
+        "peekOfCode": "application = get_asgi_application()",
+        "detail": "myproject.myproject.asgi",
+        "documentation": {}
+    },
+    {
+        "label": "BASE_DIR",
+        "kind": 5,
+        "importPath": "myproject.myproject.settings",
+        "description": "myproject.myproject.settings",
+        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/\n# SECURITY WARNING: keep the secret key used in production secret!\nSECRET_KEY = \"django-insecure-m-rfjcn=+$2e$gkh+m5c2o+af2x)3=!i-tncvm6#n)c-iehgjq\"\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [",
+        "detail": "myproject.myproject.settings",
+        "documentation": {}
+    },
+    {
+        "label": "SECRET_KEY",
+        "kind": 5,
+        "importPath": "myproject.myproject.settings",
+        "description": "myproject.myproject.settings",
+        "peekOfCode": "SECRET_KEY = \"django-insecure-m-rfjcn=+$2e$gkh+m5c2o+af2x)3=!i-tncvm6#n)c-iehgjq\"\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    \"django.contrib.admin\",\n    \"django.contrib.auth\",\n    \"django.contrib.contenttypes\",\n    \"django.contrib.sessions\",",
+        "detail": "myproject.myproject.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DEBUG",
+        "kind": 5,
+        "importPath": "myproject.myproject.settings",
+        "description": "myproject.myproject.settings",
+        "peekOfCode": "DEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    \"django.contrib.admin\",\n    \"django.contrib.auth\",\n    \"django.contrib.contenttypes\",\n    \"django.contrib.sessions\",\n    \"django.contrib.messages\",\n    \"django.contrib.staticfiles\",",
+        "detail": "myproject.myproject.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ALLOWED_HOSTS",
+        "kind": 5,
+        "importPath": "myproject.myproject.settings",
+        "description": "myproject.myproject.settings",
+        "peekOfCode": "ALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    \"django.contrib.admin\",\n    \"django.contrib.auth\",\n    \"django.contrib.contenttypes\",\n    \"django.contrib.sessions\",\n    \"django.contrib.messages\",\n    \"django.contrib.staticfiles\",\n    \"rest_framework\",",
+        "detail": "myproject.myproject.settings",
+        "documentation": {}
+    },
+    {
+        "label": "INSTALLED_APPS",
+        "kind": 5,
+        "importPath": "myproject.myproject.settings",
+        "description": "myproject.myproject.settings",
+        "peekOfCode": "INSTALLED_APPS = [\n    \"django.contrib.admin\",\n    \"django.contrib.auth\",\n    \"django.contrib.contenttypes\",\n    \"django.contrib.sessions\",\n    \"django.contrib.messages\",\n    \"django.contrib.staticfiles\",\n    \"rest_framework\",\n    \"snippets\",\n]",
+        "detail": "myproject.myproject.settings",
+        "documentation": {}
+    },
+    {
+        "label": "MIDDLEWARE",
+        "kind": 5,
+        "importPath": "myproject.myproject.settings",
+        "description": "myproject.myproject.settings",
+        "peekOfCode": "MIDDLEWARE = [\n    \"django.middleware.security.SecurityMiddleware\",\n    \"django.contrib.sessions.middleware.SessionMiddleware\",\n    \"django.middleware.common.CommonMiddleware\",\n    \"django.middleware.csrf.CsrfViewMiddleware\",\n    \"django.contrib.auth.middleware.AuthenticationMiddleware\",\n    \"django.contrib.messages.middleware.MessageMiddleware\",\n    \"django.middleware.clickjacking.XFrameOptionsMiddleware\",\n]\nROOT_URLCONF = \"myproject.urls\"",
+        "detail": "myproject.myproject.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ROOT_URLCONF",
+        "kind": 5,
+        "importPath": "myproject.myproject.settings",
+        "description": "myproject.myproject.settings",
+        "peekOfCode": "ROOT_URLCONF = \"myproject.urls\"\nTEMPLATES = [\n    {\n        \"BACKEND\": \"django.template.backends.django.DjangoTemplates\",\n        \"DIRS\": [],\n        \"APP_DIRS\": True,\n        \"OPTIONS\": {\n            \"context_processors\": [\n                \"django.template.context_processors.debug\",\n                \"django.template.context_processors.request\",",
+        "detail": "myproject.myproject.settings",
+        "documentation": {}
+    },
+    {
+        "label": "TEMPLATES",
+        "kind": 5,
+        "importPath": "myproject.myproject.settings",
+        "description": "myproject.myproject.settings",
+        "peekOfCode": "TEMPLATES = [\n    {\n        \"BACKEND\": \"django.template.backends.django.DjangoTemplates\",\n        \"DIRS\": [],\n        \"APP_DIRS\": True,\n        \"OPTIONS\": {\n            \"context_processors\": [\n                \"django.template.context_processors.debug\",\n                \"django.template.context_processors.request\",\n                \"django.contrib.auth.context_processors.auth\",",
+        "detail": "myproject.myproject.settings",
+        "documentation": {}
+    },
+    {
+        "label": "WSGI_APPLICATION",
+        "kind": 5,
+        "importPath": "myproject.myproject.settings",
+        "description": "myproject.myproject.settings",
+        "peekOfCode": "WSGI_APPLICATION = \"myproject.wsgi.application\"\n# Database\n# https://docs.djangoproject.com/en/4.2/ref/settings/#databases\nDATABASES = {\n    \"default\": {\n        \"ENGINE\": \"django.db.backends.sqlite3\",\n        \"NAME\": BASE_DIR / \"db.sqlite3\",\n    }\n}\n# Password validation",
+        "detail": "myproject.myproject.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DATABASES",
+        "kind": 5,
+        "importPath": "myproject.myproject.settings",
+        "description": "myproject.myproject.settings",
+        "peekOfCode": "DATABASES = {\n    \"default\": {\n        \"ENGINE\": \"django.db.backends.sqlite3\",\n        \"NAME\": BASE_DIR / \"db.sqlite3\",\n    }\n}\n# Password validation\n# https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators\nAUTH_PASSWORD_VALIDATORS = [\n    {",
+        "detail": "myproject.myproject.settings",
+        "documentation": {}
+    },
+    {
+        "label": "AUTH_PASSWORD_VALIDATORS",
+        "kind": 5,
+        "importPath": "myproject.myproject.settings",
+        "description": "myproject.myproject.settings",
+        "peekOfCode": "AUTH_PASSWORD_VALIDATORS = [\n    {\n        \"NAME\": \"django.contrib.auth.password_validation.UserAttributeSimilarityValidator\",\n    },\n    {\n        \"NAME\": \"django.contrib.auth.password_validation.MinimumLengthValidator\",\n    },\n    {\n        \"NAME\": \"django.contrib.auth.password_validation.CommonPasswordValidator\",\n    },",
+        "detail": "myproject.myproject.settings",
+        "documentation": {}
+    },
+    {
+        "label": "LANGUAGE_CODE",
+        "kind": 5,
+        "importPath": "myproject.myproject.settings",
+        "description": "myproject.myproject.settings",
+        "peekOfCode": "LANGUAGE_CODE = \"en-us\"\nTIME_ZONE = \"UTC\"\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.2/howto/static-files/\nSTATIC_URL = \"static/\"\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = \"django.db.models.BigAutoField\"",
+        "detail": "myproject.myproject.settings",
+        "documentation": {}
+    },
+    {
+        "label": "TIME_ZONE",
+        "kind": 5,
+        "importPath": "myproject.myproject.settings",
+        "description": "myproject.myproject.settings",
+        "peekOfCode": "TIME_ZONE = \"UTC\"\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.2/howto/static-files/\nSTATIC_URL = \"static/\"\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = \"django.db.models.BigAutoField\"",
+        "detail": "myproject.myproject.settings",
+        "documentation": {}
+    },
+    {
+        "label": "USE_I18N",
+        "kind": 5,
+        "importPath": "myproject.myproject.settings",
+        "description": "myproject.myproject.settings",
+        "peekOfCode": "USE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.2/howto/static-files/\nSTATIC_URL = \"static/\"\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = \"django.db.models.BigAutoField\"",
+        "detail": "myproject.myproject.settings",
+        "documentation": {}
+    },
+    {
+        "label": "USE_TZ",
+        "kind": 5,
+        "importPath": "myproject.myproject.settings",
+        "description": "myproject.myproject.settings",
+        "peekOfCode": "USE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.2/howto/static-files/\nSTATIC_URL = \"static/\"\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = \"django.db.models.BigAutoField\"",
+        "detail": "myproject.myproject.settings",
+        "documentation": {}
+    },
+    {
+        "label": "STATIC_URL",
+        "kind": 5,
+        "importPath": "myproject.myproject.settings",
+        "description": "myproject.myproject.settings",
+        "peekOfCode": "STATIC_URL = \"static/\"\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = \"django.db.models.BigAutoField\"",
+        "detail": "myproject.myproject.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DEFAULT_AUTO_FIELD",
+        "kind": 5,
+        "importPath": "myproject.myproject.settings",
+        "description": "myproject.myproject.settings",
+        "peekOfCode": "DEFAULT_AUTO_FIELD = \"django.db.models.BigAutoField\"",
+        "detail": "myproject.myproject.settings",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "myproject.myproject.urls",
+        "description": "myproject.myproject.urls",
+        "peekOfCode": "urlpatterns = [\n    path(\"admin/\", admin.site.urls),\n    path(\"\", include(\"snippets.urls\")),\n]",
+        "detail": "myproject.myproject.urls",
+        "documentation": {}
+    },
+    {
+        "label": "application",
+        "kind": 5,
+        "importPath": "myproject.myproject.wsgi",
+        "description": "myproject.myproject.wsgi",
+        "peekOfCode": "application = get_wsgi_application()",
+        "detail": "myproject.myproject.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "myproject.snippets.migrations.0001_initial",
+        "description": "myproject.snippets.migrations.0001_initial",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Snippet',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('created', models.DateTimeField(auto_now_add=True)),",
+        "detail": "myproject.snippets.migrations.0001_initial",
+        "documentation": {}
+    },
+    {
+        "label": "SnippetsConfig",
+        "kind": 6,
+        "importPath": "myproject.snippets.apps",
+        "description": "myproject.snippets.apps",
+        "peekOfCode": "class SnippetsConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'snippets'",
+        "detail": "myproject.snippets.apps",
+        "documentation": {}
+    },
+    {
+        "label": "Snippet",
+        "kind": 6,
+        "importPath": "myproject.snippets.models",
+        "description": "myproject.snippets.models",
+        "peekOfCode": "class Snippet(models.Model):\n    created = models.DateTimeField(auto_now_add=True)\n    title = models.CharField(max_length=100, blank=True, default='')\n    code = models.TextField()\n    linenos = models.BooleanField(default=False)\n    language = models.CharField(choices=LANGUAGE_CHOICES, default='python', max_length=100)\n    style = models.CharField(choices=STYLE_CHOICES, default='friendly', max_length=100)\n    class Meta:\n        ordering = ['created']",
+        "detail": "myproject.snippets.models",
+        "documentation": {}
+    },
+    {
+        "label": "LEXERS",
+        "kind": 5,
+        "importPath": "myproject.snippets.models",
+        "description": "myproject.snippets.models",
+        "peekOfCode": "LEXERS = [item for item in get_all_lexers() if item[1]]\nLANGUAGE_CHOICES = sorted([(item[1][0], item[0]) for item in LEXERS])\nSTYLE_CHOICES = sorted([(item, item) for item in get_all_styles()])\n# Create your models here.\nclass Snippet(models.Model):\n    created = models.DateTimeField(auto_now_add=True)\n    title = models.CharField(max_length=100, blank=True, default='')\n    code = models.TextField()\n    linenos = models.BooleanField(default=False)\n    language = models.CharField(choices=LANGUAGE_CHOICES, default='python', max_length=100)",
+        "detail": "myproject.snippets.models",
+        "documentation": {}
+    },
+    {
+        "label": "LANGUAGE_CHOICES",
+        "kind": 5,
+        "importPath": "myproject.snippets.models",
+        "description": "myproject.snippets.models",
+        "peekOfCode": "LANGUAGE_CHOICES = sorted([(item[1][0], item[0]) for item in LEXERS])\nSTYLE_CHOICES = sorted([(item, item) for item in get_all_styles()])\n# Create your models here.\nclass Snippet(models.Model):\n    created = models.DateTimeField(auto_now_add=True)\n    title = models.CharField(max_length=100, blank=True, default='')\n    code = models.TextField()\n    linenos = models.BooleanField(default=False)\n    language = models.CharField(choices=LANGUAGE_CHOICES, default='python', max_length=100)\n    style = models.CharField(choices=STYLE_CHOICES, default='friendly', max_length=100)",
+        "detail": "myproject.snippets.models",
+        "documentation": {}
+    },
+    {
+        "label": "STYLE_CHOICES",
+        "kind": 5,
+        "importPath": "myproject.snippets.models",
+        "description": "myproject.snippets.models",
+        "peekOfCode": "STYLE_CHOICES = sorted([(item, item) for item in get_all_styles()])\n# Create your models here.\nclass Snippet(models.Model):\n    created = models.DateTimeField(auto_now_add=True)\n    title = models.CharField(max_length=100, blank=True, default='')\n    code = models.TextField()\n    linenos = models.BooleanField(default=False)\n    language = models.CharField(choices=LANGUAGE_CHOICES, default='python', max_length=100)\n    style = models.CharField(choices=STYLE_CHOICES, default='friendly', max_length=100)\n    class Meta:",
+        "detail": "myproject.snippets.models",
+        "documentation": {}
+    },
+    {
+        "label": "SnippetSerializer",
+        "kind": 6,
+        "importPath": "myproject.snippets.serializers",
+        "description": "myproject.snippets.serializers",
+        "peekOfCode": "class SnippetSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Snippet\n        fields = [\"id\", \"title\", \"code\", \"linenos\", \"language\", \"style\"]\n    def create(self, validated_data):\n        \"\"\"\n        Create and return a new `Snippet` instance, given the validated data.\n        \"\"\"\n        return Snippet.objects.create(**validated_data)\n    def update(self, instance, validated_data):",
+        "detail": "myproject.snippets.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "myproject.snippets.urls",
+        "description": "myproject.snippets.urls",
+        "peekOfCode": "urlpatterns = [\n    path('snippets/', views.snippet_list),\n    path('snippets/<int:pk>/', views.snippet_detail),\n]",
+        "detail": "myproject.snippets.urls",
+        "documentation": {}
+    },
+    {
+        "label": "snippet_list",
+        "kind": 2,
+        "importPath": "myproject.snippets.views",
+        "description": "myproject.snippets.views",
+        "peekOfCode": "def snippet_list(request):\n    \"\"\"\n    List all code snippets, or create a new snippet.\n    \"\"\"\n    if request.method == 'GET':\n        snippets = Snippet.objects.all()\n        serializer = SnippetSerializer(snippets, many=True)\n        return JsonResponse(serializer.data, safe=False)\n    elif request.method == 'POST':\n        data = JSONParser().parse(request)",
+        "detail": "myproject.snippets.views",
+        "documentation": {}
+    },
+    {
+        "label": "snippet_detail",
+        "kind": 2,
+        "importPath": "myproject.snippets.views",
+        "description": "myproject.snippets.views",
+        "peekOfCode": "def snippet_detail(request, pk):\n    \"\"\"\n    Retrieve, update or delete a code snippet.\n    \"\"\"\n    try:\n        snippet = Snippet.objects.get(pk=pk)\n    except Snippet.DoesNotExist:\n        return HttpResponse(status=404)\n    if request.method == 'GET':\n        serializer = SnippetSerializer(snippet)",
+        "detail": "myproject.snippets.views",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "myproject.manage",
+        "description": "myproject.manage",
+        "peekOfCode": "def main():\n    \"\"\"Run administrative tasks.\"\"\"\n    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'myproject.settings')\n    try:\n        from django.core.management import execute_from_command_line\n    except ImportError as exc:\n        raise ImportError(\n            \"Couldn't import Django. Are you sure it's installed and \"\n            \"available on your PYTHONPATH environment variable? Did you \"\n            \"forget to activate a virtual environment?\"",
+        "detail": "myproject.manage",
+        "documentation": {}
+    }
+]
