@@ -17,14 +17,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import include,path
 import snippets
-from snippets.views import api_root
 from snippets import views
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("", include("snippets.urls")),
 
 ]
-
 urlpatterns += [
     path('api-auth/', include('rest_framework.urls')),
 ]
