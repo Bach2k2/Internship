@@ -29,6 +29,7 @@ class SnippetSerializer(serializers.ModelSerializer):
 
 
 from django.contrib.auth.models import User
+from .models import MyUser
 
 
 # class UserSerializer(serializers.ModelSerializer):
@@ -43,5 +44,9 @@ class UserSerializer(serializers.HyperlinkedModelSerializer):
     snippets = serializers.HyperlinkedRelatedField(many=True, view_name='snippet-detail', read_only=True)
 
     class Meta:
-        model = User
-        fields = ['url', 'id', 'username', 'snippets']
+        model = MyUser
+        fields = ['username', 'email', 'password', 'snippets']
+
+class UserLoginSerializer(serializers.Serializer):
+    email = serializers.EmailField(required=True)
+    password = serializers.CharField(required=True)

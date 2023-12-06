@@ -65,11 +65,109 @@
         "documentation": {}
     },
     {
+        "label": "include",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "snippets",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "snippets",
+        "description": "snippets",
+        "detail": "snippets",
+        "documentation": {}
+    },
+    {
+        "label": "views",
+        "importPath": "snippets",
+        "description": "snippets",
+        "isExtraImport": true,
+        "detail": "snippets",
+        "documentation": {}
+    },
+    {
+        "label": "views",
+        "importPath": "snippets",
+        "description": "snippets",
+        "isExtraImport": true,
+        "detail": "snippets",
+        "documentation": {}
+    },
+    {
+        "label": "views",
+        "importPath": "snippets",
+        "description": "snippets",
+        "isExtraImport": true,
+        "detail": "snippets",
+        "documentation": {}
+    },
+    {
         "label": "get_wsgi_application",
         "importPath": "django.core.wsgi",
         "description": "django.core.wsgi",
         "isExtraImport": true,
         "detail": "django.core.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "django.contrib.auth.models",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "AbstractUser",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "AbstractBaseUser",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "BaseUserManager",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
         "documentation": {}
     },
     {
@@ -97,6 +195,24 @@
         "documentation": {}
     },
     {
+        "label": "django.db.models.deletion",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django.db.models.deletion",
+        "description": "django.db.models.deletion",
+        "detail": "django.db.models.deletion",
+        "documentation": {}
+    },
+    {
+        "label": "django.utils.timezone",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django.utils.timezone",
+        "description": "django.utils.timezone",
+        "detail": "django.utils.timezone",
+        "documentation": {}
+    },
+    {
         "label": "AppConfig",
         "importPath": "django.apps",
         "description": "django.apps",
@@ -113,6 +229,14 @@
         "documentation": {}
     },
     {
+        "label": "get_lexer_by_name",
+        "importPath": "pygments.lexers",
+        "description": "pygments.lexers",
+        "isExtraImport": true,
+        "detail": "pygments.lexers",
+        "documentation": {}
+    },
+    {
         "label": "get_all_styles",
         "importPath": "pygments.styles",
         "description": "pygments.styles",
@@ -121,7 +245,112 @@
         "documentation": {}
     },
     {
+        "label": "HtmlFormatter",
+        "importPath": "pygments.formatters.html",
+        "description": "pygments.formatters.html",
+        "isExtraImport": true,
+        "detail": "pygments.formatters.html",
+        "documentation": {}
+    },
+    {
+        "label": "highlight",
+        "importPath": "pygments",
+        "description": "pygments",
+        "isExtraImport": true,
+        "detail": "pygments",
+        "documentation": {}
+    },
+    {
+        "label": "rest_framework",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "permissions",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
         "label": "serializers",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "renderers",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "generics",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "permissions",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "renderers",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "viewsets",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "viewsets",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "permissions",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "renderers",
         "importPath": "rest_framework",
         "description": "rest_framework",
         "isExtraImport": true,
@@ -161,6 +390,22 @@
         "documentation": {}
     },
     {
+        "label": "Snippet",
+        "importPath": "snippets.models",
+        "description": "snippets.models",
+        "isExtraImport": true,
+        "detail": "snippets.models",
+        "documentation": {}
+    },
+    {
+        "label": "MyUser",
+        "importPath": "snippets.models",
+        "description": "snippets.models",
+        "isExtraImport": true,
+        "detail": "snippets.models",
+        "documentation": {}
+    },
+    {
         "label": "TestCase",
         "importPath": "django.test",
         "description": "django.test",
@@ -169,11 +414,27 @@
         "documentation": {}
     },
     {
-        "label": "views",
-        "importPath": "snippets",
-        "description": "snippets",
+        "label": "SnippetViewSet",
+        "importPath": "snippets.views",
+        "description": "snippets.views",
         "isExtraImport": true,
-        "detail": "snippets",
+        "detail": "snippets.views",
+        "documentation": {}
+    },
+    {
+        "label": "UserViewSet",
+        "importPath": "snippets.views",
+        "description": "snippets.views",
+        "isExtraImport": true,
+        "detail": "snippets.views",
+        "documentation": {}
+    },
+    {
+        "label": "DefaultRouter",
+        "importPath": "rest_framework.routers",
+        "description": "rest_framework.routers",
+        "isExtraImport": true,
+        "detail": "rest_framework.routers",
         "documentation": {}
     },
     {
@@ -194,6 +455,14 @@
     },
     {
         "label": "JsonResponse",
+        "importPath": "django.http",
+        "description": "django.http",
+        "isExtraImport": true,
+        "detail": "django.http",
+        "documentation": {}
+    },
+    {
+        "label": "Http404",
         "importPath": "django.http",
         "description": "django.http",
         "isExtraImport": true,
@@ -222,6 +491,126 @@
         "description": "snippets.serializers",
         "isExtraImport": true,
         "detail": "snippets.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "UserSerializer",
+        "importPath": "snippets.serializers",
+        "description": "snippets.serializers",
+        "isExtraImport": true,
+        "detail": "snippets.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "SnippetSerializer",
+        "importPath": "snippets.serializers",
+        "description": "snippets.serializers",
+        "isExtraImport": true,
+        "detail": "snippets.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "UserSerializer",
+        "importPath": "snippets.serializers",
+        "description": "snippets.serializers",
+        "isExtraImport": true,
+        "detail": "snippets.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "UserLoginSerializer",
+        "importPath": "snippets.serializers",
+        "description": "snippets.serializers",
+        "isExtraImport": true,
+        "detail": "snippets.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "api_view",
+        "importPath": "rest_framework.decorators",
+        "description": "rest_framework.decorators",
+        "isExtraImport": true,
+        "detail": "rest_framework.decorators",
+        "documentation": {}
+    },
+    {
+        "label": "api_view",
+        "importPath": "rest_framework.decorators",
+        "description": "rest_framework.decorators",
+        "isExtraImport": true,
+        "detail": "rest_framework.decorators",
+        "documentation": {}
+    },
+    {
+        "label": "action",
+        "importPath": "rest_framework.decorators",
+        "description": "rest_framework.decorators",
+        "isExtraImport": true,
+        "detail": "rest_framework.decorators",
+        "documentation": {}
+    },
+    {
+        "label": "Response",
+        "importPath": "rest_framework.response",
+        "description": "rest_framework.response",
+        "isExtraImport": true,
+        "detail": "rest_framework.response",
+        "documentation": {}
+    },
+    {
+        "label": "Response",
+        "importPath": "rest_framework.response",
+        "description": "rest_framework.response",
+        "isExtraImport": true,
+        "detail": "rest_framework.response",
+        "documentation": {}
+    },
+    {
+        "label": "Response",
+        "importPath": "rest_framework.response",
+        "description": "rest_framework.response",
+        "isExtraImport": true,
+        "detail": "rest_framework.response",
+        "documentation": {}
+    },
+    {
+        "label": "APIView",
+        "importPath": "rest_framework.views",
+        "description": "rest_framework.views",
+        "isExtraImport": true,
+        "detail": "rest_framework.views",
+        "documentation": {}
+    },
+    {
+        "label": "IsOwnerOrReadOnly",
+        "importPath": "snippets.permissions",
+        "description": "snippets.permissions",
+        "isExtraImport": true,
+        "detail": "snippets.permissions",
+        "documentation": {}
+    },
+    {
+        "label": "reverse",
+        "importPath": "rest_framework.reverse",
+        "description": "rest_framework.reverse",
+        "isExtraImport": true,
+        "detail": "rest_framework.reverse",
+        "documentation": {}
+    },
+    {
+        "label": "Token",
+        "importPath": "rest_framework.authtoken.models",
+        "description": "rest_framework.authtoken.models",
+        "isExtraImport": true,
+        "detail": "rest_framework.authtoken.models",
+        "documentation": {}
+    },
+    {
+        "label": "authenticate",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth",
         "documentation": {}
     },
     {
@@ -283,7 +672,7 @@
         "kind": 5,
         "importPath": "myproject.myproject.settings",
         "description": "myproject.myproject.settings",
-        "peekOfCode": "INSTALLED_APPS = [\n    \"django.contrib.admin\",\n    \"django.contrib.auth\",\n    \"django.contrib.contenttypes\",\n    \"django.contrib.sessions\",\n    \"django.contrib.messages\",\n    \"django.contrib.staticfiles\",\n    \"rest_framework\",\n    \"snippets\",\n]",
+        "peekOfCode": "INSTALLED_APPS = [\n    \"django.contrib.admin\",\n    \"django.contrib.auth\",\n    \"django.contrib.contenttypes\",\n    \"django.contrib.sessions\",\n    \"django.contrib.messages\",\n    \"django.contrib.staticfiles\",\n    \"rest_framework\",\n    \"rest_framework.authtoken\",\n    \"snippets\",",
         "detail": "myproject.myproject.settings",
         "documentation": {}
     },
@@ -319,7 +708,25 @@
         "kind": 5,
         "importPath": "myproject.myproject.settings",
         "description": "myproject.myproject.settings",
-        "peekOfCode": "WSGI_APPLICATION = \"myproject.wsgi.application\"\n# Database\n# https://docs.djangoproject.com/en/4.2/ref/settings/#databases\nDATABASES = {\n    \"default\": {\n        \"ENGINE\": \"django.db.backends.sqlite3\",\n        \"NAME\": BASE_DIR / \"db.sqlite3\",\n    }\n}\n# Password validation",
+        "peekOfCode": "WSGI_APPLICATION = \"myproject.wsgi.application\"\nAUTH_USER_MODEL = 'snippets.MyUser'\nREST_FRAMEWORK = {\n    \"DEFAULT_PAGINATION_CLASS\": \"rest_framework.pagination.PageNumberPagination\",\n    \"PAGE_SIZE\": 10,\n    \"DEFAULT_AUTHENTICATION_CLASSES\": [\n        \"rest_framework.authentication.BasicAuthentication\",\n        \"rest_framework.authentication.SessionAuthentication\",\n    ],\n}",
+        "detail": "myproject.myproject.settings",
+        "documentation": {}
+    },
+    {
+        "label": "AUTH_USER_MODEL",
+        "kind": 5,
+        "importPath": "myproject.myproject.settings",
+        "description": "myproject.myproject.settings",
+        "peekOfCode": "AUTH_USER_MODEL = 'snippets.MyUser'\nREST_FRAMEWORK = {\n    \"DEFAULT_PAGINATION_CLASS\": \"rest_framework.pagination.PageNumberPagination\",\n    \"PAGE_SIZE\": 10,\n    \"DEFAULT_AUTHENTICATION_CLASSES\": [\n        \"rest_framework.authentication.BasicAuthentication\",\n        \"rest_framework.authentication.SessionAuthentication\",\n    ],\n}\n# Database",
+        "detail": "myproject.myproject.settings",
+        "documentation": {}
+    },
+    {
+        "label": "REST_FRAMEWORK",
+        "kind": 5,
+        "importPath": "myproject.myproject.settings",
+        "description": "myproject.myproject.settings",
+        "peekOfCode": "REST_FRAMEWORK = {\n    \"DEFAULT_PAGINATION_CLASS\": \"rest_framework.pagination.PageNumberPagination\",\n    \"PAGE_SIZE\": 10,\n    \"DEFAULT_AUTHENTICATION_CLASSES\": [\n        \"rest_framework.authentication.BasicAuthentication\",\n        \"rest_framework.authentication.SessionAuthentication\",\n    ],\n}\n# Database\n# https://docs.djangoproject.com/en/4.2/ref/settings/#databases",
         "detail": "myproject.myproject.settings",
         "documentation": {}
     },
@@ -400,7 +807,7 @@
         "kind": 5,
         "importPath": "myproject.myproject.urls",
         "description": "myproject.myproject.urls",
-        "peekOfCode": "urlpatterns = [\n    path(\"admin/\", admin.site.urls),\n    path(\"\", include(\"snippets.urls\")),\n]",
+        "peekOfCode": "urlpatterns = [\n    path(\"admin/\", admin.site.urls),\n    path(\"\", include(\"snippets.urls\")),\n]\nurlpatterns += [\n    path('api-auth/', include('rest_framework.urls')),\n]",
         "detail": "myproject.myproject.urls",
         "documentation": {}
     },
@@ -418,7 +825,7 @@
         "kind": 6,
         "importPath": "myproject.snippets.migrations.0001_initial",
         "description": "myproject.snippets.migrations.0001_initial",
-        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Snippet',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('created', models.DateTimeField(auto_now_add=True)),",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n        ('auth', '0012_alter_user_first_name_max_length'),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='MyUser',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),",
         "detail": "myproject.snippets.migrations.0001_initial",
         "documentation": {}
     },
@@ -436,7 +843,16 @@
         "kind": 6,
         "importPath": "myproject.snippets.models",
         "description": "myproject.snippets.models",
-        "peekOfCode": "class Snippet(models.Model):\n    created = models.DateTimeField(auto_now_add=True)\n    title = models.CharField(max_length=100, blank=True, default='')\n    code = models.TextField()\n    linenos = models.BooleanField(default=False)\n    language = models.CharField(choices=LANGUAGE_CHOICES, default='python', max_length=100)\n    style = models.CharField(choices=STYLE_CHOICES, default='friendly', max_length=100)\n    class Meta:\n        ordering = ['created']",
+        "peekOfCode": "class Snippet(models.Model):\n    created = models.DateTimeField(auto_now_add=True)\n    title = models.CharField(max_length=100, blank=True, default=\"\")\n    code = models.TextField()\n    linenos = models.BooleanField(default=False)\n    language = models.CharField(\n        choices=LANGUAGE_CHOICES, default=\"python\", max_length=100\n    )\n    style = models.CharField(choices=STYLE_CHOICES, default=\"friendly\", max_length=100)\n    owner = models.ForeignKey(",
+        "detail": "myproject.snippets.models",
+        "documentation": {}
+    },
+    {
+        "label": "MyUser",
+        "kind": 6,
+        "importPath": "myproject.snippets.models",
+        "description": "myproject.snippets.models",
+        "peekOfCode": "class MyUser(AbstractUser):\n    username = None\n    last_login = None\n    is_staff = None\n    is_superuser = None\n    email = models.EmailField(unique=True,default=\"abc@example.com\")\n    password = models.CharField(max_length=100)\n    USERNAME_FIELD = \"email\"\n    REQUIRED_FIELDS = [] #The 'USERNAME_FIELD' is currently set to 'email', you should remove 'email' from the 'REQUIRED_FIELDS'.\n    # Add this line to avoid clashes with groups",
         "detail": "myproject.snippets.models",
         "documentation": {}
     },
@@ -445,7 +861,7 @@
         "kind": 5,
         "importPath": "myproject.snippets.models",
         "description": "myproject.snippets.models",
-        "peekOfCode": "LEXERS = [item for item in get_all_lexers() if item[1]]\nLANGUAGE_CHOICES = sorted([(item[1][0], item[0]) for item in LEXERS])\nSTYLE_CHOICES = sorted([(item, item) for item in get_all_styles()])\n# Create your models here.\nclass Snippet(models.Model):\n    created = models.DateTimeField(auto_now_add=True)\n    title = models.CharField(max_length=100, blank=True, default='')\n    code = models.TextField()\n    linenos = models.BooleanField(default=False)\n    language = models.CharField(choices=LANGUAGE_CHOICES, default='python', max_length=100)",
+        "peekOfCode": "LEXERS = [item for item in get_all_lexers() if item[1]]\nLANGUAGE_CHOICES = sorted([(item[1][0], item[0]) for item in LEXERS])\nSTYLE_CHOICES = sorted([(item, item) for item in get_all_styles()])\nprint(LEXERS)\n# Create your models here.\nclass Snippet(models.Model):\n    created = models.DateTimeField(auto_now_add=True)\n    title = models.CharField(max_length=100, blank=True, default=\"\")\n    code = models.TextField()\n    linenos = models.BooleanField(default=False)",
         "detail": "myproject.snippets.models",
         "documentation": {}
     },
@@ -454,7 +870,7 @@
         "kind": 5,
         "importPath": "myproject.snippets.models",
         "description": "myproject.snippets.models",
-        "peekOfCode": "LANGUAGE_CHOICES = sorted([(item[1][0], item[0]) for item in LEXERS])\nSTYLE_CHOICES = sorted([(item, item) for item in get_all_styles()])\n# Create your models here.\nclass Snippet(models.Model):\n    created = models.DateTimeField(auto_now_add=True)\n    title = models.CharField(max_length=100, blank=True, default='')\n    code = models.TextField()\n    linenos = models.BooleanField(default=False)\n    language = models.CharField(choices=LANGUAGE_CHOICES, default='python', max_length=100)\n    style = models.CharField(choices=STYLE_CHOICES, default='friendly', max_length=100)",
+        "peekOfCode": "LANGUAGE_CHOICES = sorted([(item[1][0], item[0]) for item in LEXERS])\nSTYLE_CHOICES = sorted([(item, item) for item in get_all_styles()])\nprint(LEXERS)\n# Create your models here.\nclass Snippet(models.Model):\n    created = models.DateTimeField(auto_now_add=True)\n    title = models.CharField(max_length=100, blank=True, default=\"\")\n    code = models.TextField()\n    linenos = models.BooleanField(default=False)\n    language = models.CharField(",
         "detail": "myproject.snippets.models",
         "documentation": {}
     },
@@ -463,8 +879,17 @@
         "kind": 5,
         "importPath": "myproject.snippets.models",
         "description": "myproject.snippets.models",
-        "peekOfCode": "STYLE_CHOICES = sorted([(item, item) for item in get_all_styles()])\n# Create your models here.\nclass Snippet(models.Model):\n    created = models.DateTimeField(auto_now_add=True)\n    title = models.CharField(max_length=100, blank=True, default='')\n    code = models.TextField()\n    linenos = models.BooleanField(default=False)\n    language = models.CharField(choices=LANGUAGE_CHOICES, default='python', max_length=100)\n    style = models.CharField(choices=STYLE_CHOICES, default='friendly', max_length=100)\n    class Meta:",
+        "peekOfCode": "STYLE_CHOICES = sorted([(item, item) for item in get_all_styles()])\nprint(LEXERS)\n# Create your models here.\nclass Snippet(models.Model):\n    created = models.DateTimeField(auto_now_add=True)\n    title = models.CharField(max_length=100, blank=True, default=\"\")\n    code = models.TextField()\n    linenos = models.BooleanField(default=False)\n    language = models.CharField(\n        choices=LANGUAGE_CHOICES, default=\"python\", max_length=100",
         "detail": "myproject.snippets.models",
+        "documentation": {}
+    },
+    {
+        "label": "IsOwnerOrReadOnly",
+        "kind": 6,
+        "importPath": "myproject.snippets.permissions",
+        "description": "myproject.snippets.permissions",
+        "peekOfCode": "class IsOwnerOrReadOnly(permissions.BasePermission):\n    \"\"\"\n    Custom permission to only allow owners of an object to edit it.\n    \"\"\"\n    def has_object_permission(self, request, view, obj):\n        # Read permissions are allowed to any request,\n        # so we'll always allow GET, HEAD or OPTIONS requests.\n        if request.method in permissions.SAFE_METHODS:\n            return True\n        # Write permissions are only allowed to the owner of the snippet.",
+        "detail": "myproject.snippets.permissions",
         "documentation": {}
     },
     {
@@ -472,8 +897,80 @@
         "kind": 6,
         "importPath": "myproject.snippets.serializers",
         "description": "myproject.snippets.serializers",
-        "peekOfCode": "class SnippetSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Snippet\n        fields = [\"id\", \"title\", \"code\", \"linenos\", \"language\", \"style\"]\n    def create(self, validated_data):\n        \"\"\"\n        Create and return a new `Snippet` instance, given the validated data.\n        \"\"\"\n        return Snippet.objects.create(**validated_data)\n    def update(self, instance, validated_data):",
+        "peekOfCode": "class SnippetSerializer(serializers.ModelSerializer):\n    highlight = serializers.HyperlinkedIdentityField(\n        view_name=\"snippet-highlight\", format=\"html\"\n    )\n    owner = serializers.ReadOnlyField(source=\"owner.username\")\n    class Meta:\n        model = Snippet\n        fields = [\"id\",\"url\" , 'highlight',\"title\", \"code\", \"linenos\", \"language\", \"style\", \"owner\"]\n    def create(self, validated_data):\n        return Snippet.objects.create(**validated_data)",
         "detail": "myproject.snippets.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "UserSerializer",
+        "kind": 6,
+        "importPath": "myproject.snippets.serializers",
+        "description": "myproject.snippets.serializers",
+        "peekOfCode": "class UserSerializer(serializers.HyperlinkedModelSerializer):\n    snippets = serializers.HyperlinkedRelatedField(many=True, view_name='snippet-detail', read_only=True)\n    class Meta:\n        model = MyUser\n        fields = ['username', 'email', 'password', 'snippets']\nclass UserLoginSerializer(serializers.Serializer):\n    email = serializers.EmailField(required=True)\n    password = serializers.CharField(required=True)",
+        "detail": "myproject.snippets.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "UserLoginSerializer",
+        "kind": 6,
+        "importPath": "myproject.snippets.serializers",
+        "description": "myproject.snippets.serializers",
+        "peekOfCode": "class UserLoginSerializer(serializers.Serializer):\n    email = serializers.EmailField(required=True)\n    password = serializers.CharField(required=True)",
+        "detail": "myproject.snippets.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "router",
+        "kind": 5,
+        "importPath": "myproject.snippets.urls",
+        "description": "myproject.snippets.urls",
+        "peekOfCode": "router = DefaultRouter()\nrouter.register(r\"snippets\", views.SnippetViewSet, basename=\"snippet\")\nrouter.register(r\"users\", views.UserViewSet, basename=\"user\")\nsnippet_list = SnippetViewSet.as_view({\"get\": \"list\", \"post\": \"create\"})\nsnippet_detail = SnippetViewSet.as_view(\n    {\"get\": \"retrieve\", \"put\": \"update\", \"patch\": \"partial_update\", \"delete\": \"destroy\"}\n)\nsnippet_highlight = SnippetViewSet.as_view(\n    {\"get\": \"highlight\"}, renderer_classes=[renderers.StaticHTMLRenderer]\n)",
+        "detail": "myproject.snippets.urls",
+        "documentation": {}
+    },
+    {
+        "label": "snippet_list",
+        "kind": 5,
+        "importPath": "myproject.snippets.urls",
+        "description": "myproject.snippets.urls",
+        "peekOfCode": "snippet_list = SnippetViewSet.as_view({\"get\": \"list\", \"post\": \"create\"})\nsnippet_detail = SnippetViewSet.as_view(\n    {\"get\": \"retrieve\", \"put\": \"update\", \"patch\": \"partial_update\", \"delete\": \"destroy\"}\n)\nsnippet_highlight = SnippetViewSet.as_view(\n    {\"get\": \"highlight\"}, renderer_classes=[renderers.StaticHTMLRenderer]\n)\nuser_list = UserViewSet.as_view({\"get\": \"list\"})\nuser_detail = UserViewSet.as_view({\"get\": \"retrieve\"})\n# The API URLs are now determined automatically by the router.",
+        "detail": "myproject.snippets.urls",
+        "documentation": {}
+    },
+    {
+        "label": "snippet_detail",
+        "kind": 5,
+        "importPath": "myproject.snippets.urls",
+        "description": "myproject.snippets.urls",
+        "peekOfCode": "snippet_detail = SnippetViewSet.as_view(\n    {\"get\": \"retrieve\", \"put\": \"update\", \"patch\": \"partial_update\", \"delete\": \"destroy\"}\n)\nsnippet_highlight = SnippetViewSet.as_view(\n    {\"get\": \"highlight\"}, renderer_classes=[renderers.StaticHTMLRenderer]\n)\nuser_list = UserViewSet.as_view({\"get\": \"list\"})\nuser_detail = UserViewSet.as_view({\"get\": \"retrieve\"})\n# The API URLs are now determined automatically by the router.\nurlpatterns = [",
+        "detail": "myproject.snippets.urls",
+        "documentation": {}
+    },
+    {
+        "label": "snippet_highlight",
+        "kind": 5,
+        "importPath": "myproject.snippets.urls",
+        "description": "myproject.snippets.urls",
+        "peekOfCode": "snippet_highlight = SnippetViewSet.as_view(\n    {\"get\": \"highlight\"}, renderer_classes=[renderers.StaticHTMLRenderer]\n)\nuser_list = UserViewSet.as_view({\"get\": \"list\"})\nuser_detail = UserViewSet.as_view({\"get\": \"retrieve\"})\n# The API URLs are now determined automatically by the router.\nurlpatterns = [\n    path(\"\", include(router.urls)),\n    path(\"snippets/\", snippet_list, name=\"snippet-list\"),\n    path(\"snippets/<int:pk>/\", snippet_detail, name=\"snippet-detail\"),",
+        "detail": "myproject.snippets.urls",
+        "documentation": {}
+    },
+    {
+        "label": "user_list",
+        "kind": 5,
+        "importPath": "myproject.snippets.urls",
+        "description": "myproject.snippets.urls",
+        "peekOfCode": "user_list = UserViewSet.as_view({\"get\": \"list\"})\nuser_detail = UserViewSet.as_view({\"get\": \"retrieve\"})\n# The API URLs are now determined automatically by the router.\nurlpatterns = [\n    path(\"\", include(router.urls)),\n    path(\"snippets/\", snippet_list, name=\"snippet-list\"),\n    path(\"snippets/<int:pk>/\", snippet_detail, name=\"snippet-detail\"),\n    path(\"snippets/<int:pk>/highlight/\", snippet_highlight, name=\"snippet-highlight\"),\n    path(\"users/\", user_list, name=\"user-list\"),\n    path(\"users/<int:pk>/\", user_detail, name=\"user-detail\"),",
+        "detail": "myproject.snippets.urls",
+        "documentation": {}
+    },
+    {
+        "label": "user_detail",
+        "kind": 5,
+        "importPath": "myproject.snippets.urls",
+        "description": "myproject.snippets.urls",
+        "peekOfCode": "user_detail = UserViewSet.as_view({\"get\": \"retrieve\"})\n# The API URLs are now determined automatically by the router.\nurlpatterns = [\n    path(\"\", include(router.urls)),\n    path(\"snippets/\", snippet_list, name=\"snippet-list\"),\n    path(\"snippets/<int:pk>/\", snippet_detail, name=\"snippet-detail\"),\n    path(\"snippets/<int:pk>/highlight/\", snippet_highlight, name=\"snippet-highlight\"),\n    path(\"users/\", user_list, name=\"user-list\"),\n    path(\"users/<int:pk>/\", user_detail, name=\"user-detail\"),\n    path(\"login\", views.LoginView.as_view(), name=\"login\"),",
+        "detail": "myproject.snippets.urls",
         "documentation": {}
     },
     {
@@ -481,25 +978,43 @@
         "kind": 5,
         "importPath": "myproject.snippets.urls",
         "description": "myproject.snippets.urls",
-        "peekOfCode": "urlpatterns = [\n    path('snippets/', views.snippet_list),\n    path('snippets/<int:pk>/', views.snippet_detail),\n]",
+        "peekOfCode": "urlpatterns = [\n    path(\"\", include(router.urls)),\n    path(\"snippets/\", snippet_list, name=\"snippet-list\"),\n    path(\"snippets/<int:pk>/\", snippet_detail, name=\"snippet-detail\"),\n    path(\"snippets/<int:pk>/highlight/\", snippet_highlight, name=\"snippet-highlight\"),\n    path(\"users/\", user_list, name=\"user-list\"),\n    path(\"users/<int:pk>/\", user_detail, name=\"user-detail\"),\n    path(\"login\", views.LoginView.as_view(), name=\"login\"),\n    path(\"register/\", views.RegisterView.as_view(), name=\"register\"),\n]",
         "detail": "myproject.snippets.urls",
         "documentation": {}
     },
     {
-        "label": "snippet_list",
-        "kind": 2,
+        "label": "UserViewSet",
+        "kind": 6,
         "importPath": "myproject.snippets.views",
         "description": "myproject.snippets.views",
-        "peekOfCode": "def snippet_list(request):\n    \"\"\"\n    List all code snippets, or create a new snippet.\n    \"\"\"\n    if request.method == 'GET':\n        snippets = Snippet.objects.all()\n        serializer = SnippetSerializer(snippets, many=True)\n        return JsonResponse(serializer.data, safe=False)\n    elif request.method == 'POST':\n        data = JSONParser().parse(request)",
+        "peekOfCode": "class UserViewSet(viewsets.ReadOnlyModelViewSet):\n    \"\"\"\n    This viewset automatically provides `list` and `retrieve` actions.\n    \"\"\"\n    queryset = MyUser.objects.all()\n    serializer_class = UserSerializer\nclass SnippetViewSet(viewsets.ModelViewSet):\n    queryset = Snippet.objects.all()\n    serializer_class = SnippetSerializer\n    permission_classes = [permissions.IsAuthenticatedOrReadOnly, IsOwnerOrReadOnly]",
         "detail": "myproject.snippets.views",
         "documentation": {}
     },
     {
-        "label": "snippet_detail",
-        "kind": 2,
+        "label": "SnippetViewSet",
+        "kind": 6,
         "importPath": "myproject.snippets.views",
         "description": "myproject.snippets.views",
-        "peekOfCode": "def snippet_detail(request, pk):\n    \"\"\"\n    Retrieve, update or delete a code snippet.\n    \"\"\"\n    try:\n        snippet = Snippet.objects.get(pk=pk)\n    except Snippet.DoesNotExist:\n        return HttpResponse(status=404)\n    if request.method == 'GET':\n        serializer = SnippetSerializer(snippet)",
+        "peekOfCode": "class SnippetViewSet(viewsets.ModelViewSet):\n    queryset = Snippet.objects.all()\n    serializer_class = SnippetSerializer\n    permission_classes = [permissions.IsAuthenticatedOrReadOnly, IsOwnerOrReadOnly]\n    @action(detail=True, renderer_classes=[renderers.StaticHTMLRenderer])\n    def highlight(self, request, *args, **kwargs):\n        snippet = self.get_object()\n        return Response(snippet.highlighted)\n    def perform_create(self, serializer):\n        serializer.save(owner=self.request.user)",
+        "detail": "myproject.snippets.views",
+        "documentation": {}
+    },
+    {
+        "label": "LoginView",
+        "kind": 6,
+        "importPath": "myproject.snippets.views",
+        "description": "myproject.snippets.views",
+        "peekOfCode": "class LoginView(APIView):\n    def post(self, request):\n        # serializer = self.serializer_class(\n        #     data=request.data, context={\"request\": request}\n        # )\n        # # print(request.user)\n        # username = request.data.username\n        # password = request.data.password\n        # serializer.is_valid(raise_exception=True)\n        # user = serializer.validated_data[\"user\"]",
+        "detail": "myproject.snippets.views",
+        "documentation": {}
+    },
+    {
+        "label": "RegisterView",
+        "kind": 6,
+        "importPath": "myproject.snippets.views",
+        "description": "myproject.snippets.views",
+        "peekOfCode": "class RegisterView(APIView):\n    def post(self, request):\n        serializer = UserSerializer(data=request.data)\n        if serializer.is_valid():\n            # serializer.validated_data(\"password\")\n            user = serializer.save()\n            # user= MyUser.objects.create_user(email=request.data.username, password=request.data.password)\n            # user.save();\n            # return Response(request.data, status=status.HTTP_201_CREATED)\n            return JsonResponse(",
         "detail": "myproject.snippets.views",
         "documentation": {}
     },
