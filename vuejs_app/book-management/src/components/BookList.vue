@@ -1,9 +1,17 @@
 <script setup lang="ts">
+import {ref} from 'vue'
 interface Book {
-  title: string
-  author: string
-  year: number
+    title: string
+    author: string
+    year: number
 }
+// const book = ref<Book[]|null>(null)
+// const url
+// const { data: books } = await fetch<Book>("https://reqres.in/api/users", {
+//     headers: {
+//         // Authorization: `Bearer ${tokenCookie.value}`,
+//     }
+// })
 const books = [
     {title:'1', author:'haha',year:2002},
     {title:'2', author:'haha2',year:2002},

@@ -34,7 +34,7 @@ const filteredData = computed(() => {
   return data
 })
 
-function sortBy(key) {
+function sortBy(key:any) {
   sortKey.value = key
   sortOrders.value[key] *= -1
 }
