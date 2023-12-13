@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { ref, watchEffect } from 'vue'
 import Grid from './Grid.vue'
+import Header from './Header/Header.vue';
 interface User {
     id: number,
     email: string,
@@ -29,8 +30,15 @@ watchEffect(async () => {
 </script>
 
 <template>
+    <!-- <header id="header"/> -->
+    <Header/>
     <div>
         <h1>My User List</h1>
+        <router-link class="button" to="/add-user" tag="button">Create new user</router-link>
+        <!-- <button>Add users</button> -->
+        <!-- <route-link to="/add-user" custom v-slot="{ navigate }">
+           <span @click="navigate" @keypress.enter="navigate" role="link"> Add new user </span>
+        </route-link> -->
     </div>
     <form id="search">
         Search <input name="query" v-model="searchQuery">
@@ -38,3 +46,17 @@ watchEffect(async () => {
     <Grid style="margin-top:20px" :data="users" :columns="gridColumns" :filter-key="searchQuery">
     </Grid>
 </template>
+<style scoped>
+.button{
+    display:block;
+    background-color: blueviolet;
+    color:aliceblue;
+    justify-content: center;
+    align-items: center;
+    padding:10;
+    width:100px;
+    text-decoration: none;
+    font-size:20px
+}
+
+</style>
