@@ -1,14 +1,15 @@
 <script setup lang="ts">
-import { ref, computed } from 'vue'
+import { ref, computed, defineProps } from 'vue'
 
-const props = defineProps({
-  data: Array,
-  columns: Array,
-  filterKey: String
-})
+// Define the prop types
+const props = defineProps<{
+  data: Array<Record<string, any>>,
+  columns: Array<string>,
+  filterKey: string
+}>()
 
-const sortKey = ref('')
-const sortOrders = ref(
+const sortKey = ref<string>('')
+const sortOrders = ref<{ [key: string]: number }>(
   props.columns.reduce((o, key) => ((o[key] = 1), o), {})
 )
 
@@ -34,12 +35,12 @@ const filteredData = computed(() => {
   return data
 })
 
-function sortBy(key:any) {
+function sortBy(key: string) {
   sortKey.value = key
   sortOrders.value[key] *= -1
 }
 
-function capitalize(str) {
+function capitalize(str: string): string {
   return str.charAt(0).toUpperCase() + str.slice(1)
 }
 </script>
@@ -48,9 +49,7 @@ function capitalize(str) {
   <table v-if="filteredData.length">
     <thead>
       <tr>
-        <th v-for="key in columns"
-          @click="sortBy(key)"
-          :class="{ active: sortKey == key }">
+        <th v-for="key in columns" @click="sortBy(key)" :class="{ active: sortKey == key }">
           {{ capitalize(key) }}
           <span class="arrow" :class="sortOrders[key] > 0 ? 'asc' : 'dsc'">
           </span>
@@ -60,7 +59,13 @@ function capitalize(str) {
     <tbody>
       <tr v-for="entry in filteredData">
         <td v-for="key in columns">
-          {{entry[key]}}
+          <span v-if="key == 'avatar'">
+            <img :src="entry[key]">
+          </span>
+          <span v-else>
+            {{ entry[key] }}
+          </span>
+
         </td>
       </tr>
     </tbody>
