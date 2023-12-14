@@ -61,10 +61,19 @@ class Book(models.Model):
     title= models.CharField(max_length=100)
     author= models.CharField(max_length=100)
     year = models.IntegerField(null=True, blank=True)
+    # coverBook =models.CharField(max_length=1000);
+    coverBook = models.ImageField(upload_to='images/', null=True, blank=True)
+    description = models.CharField(max_length=300)
+    is_active = models.BooleanField(default=True,blank=True)
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
     Category = models.ForeignKey(Category,on_delete=models.CASCADE)
+    
     
     class Meta:
         ordering=["title"];
+    def __str__(self):
+        return self.title
 
 
 

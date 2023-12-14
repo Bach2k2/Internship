@@ -5,6 +5,7 @@ import loginImg from "../../assets/login.svg";
 import { useRoute, useRouter } from 'vue-router';
 import Home from '../Home/Home.vue';
 import axios from 'axios'
+import { setAuth } from '@/store/store';
 const username = ref('viet')
 const password = ref('viet1234')
 const router = useRouter();
@@ -24,13 +25,15 @@ const handleLogin = async () => {
   // Rest Django token:
   axios.post('http://127.0.0.1:8000/login/', { 'username': username.value, 'password': password.value }, config).then(
     (data) => {
-      localStorage.setItem('token', JSON.stringify(data.data.access_token))
-      localStorage.setItem('user_id', JSON.stringify(data.data.user_id))
+      localStorage.setItem('token', data.data.access_token) // First I did JSON.stringify
+      localStorage.setItem('user_id', data.data.user_id)
       // console.log(data)
       router.push({ path: '/' })
+      setAuth(true)
       alert('Login successful')
     }
   ).catch(() => {
+    setAuth(false)
     alert('Authentication failed')
   })
   // jwt token

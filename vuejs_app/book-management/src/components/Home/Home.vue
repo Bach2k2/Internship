@@ -1,26 +1,42 @@
 <script setup lang="ts">
-import { onMounted } from 'vue';
+import { onMounted, onUnmounted, onUpdated } from 'vue';
 import Header from '../Header/Header.vue';
 import './Home.css'
 import axios from 'axios';
+import { setUser } from '@/store/store';
 
 onMounted(async () => {
+    console.log(`the component is now mounted.`)
     const token = await localStorage.getItem('token');
     console.log(token);
     const user_id = await localStorage.getItem('user_id');
-    console.log(user_id);
-    const config = {
-        headers: {
-            'Content-Type': 'application/json',
-            'Authorization': `Token ${token}`
-        },
+
+    if (user_id && token) {
+        const config = {
+            headers: {
+                'Content-Type': 'application/json',
+                'Authorization': `Token ${token}`
+            },
+        }
+        let userid = parseInt(user_id,10)
+        console.log(userid);
+        try {
+            const res = await axios.get(`http://127.0.0.1:8000/users/${userid}`, config);
+            console.log(res);
+            setUser(res.data);
+
+        } catch (e) {
+            console.log(e);
+        }
     }
-    try {
-        const res = await axios.get(`http://127.0.0.1:8000/users/${user_id}`, config);
 
 
-    } catch (e) {
-    }
+})
+onUnmounted(()=>{
+    console.log('Unmounted')
+})
+onUpdated(()=>{
+    console.log('Updated')
 })
 
 </script>
