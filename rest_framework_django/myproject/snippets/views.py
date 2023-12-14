@@ -1,10 +1,11 @@
 import django.contrib.auth.models
 from django.shortcuts import render
+from rest_framework.authentication import SessionAuthentication, BasicAuthentication
 
 from django.http import HttpResponse, JsonResponse, Http404
 from django.views.decorators.csrf import csrf_exempt
 from rest_framework.parsers import JSONParser
-from snippets.models import Snippet
+from snippets.models import Book, Snippet
 from snippets.serializers import SnippetSerializer, UserSerializer
 import rest_framework
 from rest_framework.decorators import api_view
@@ -48,14 +49,14 @@ from snippets.models import MyUser
 from snippets.serializers import UserSerializer, UserLoginSerializer
 from rest_framework.authtoken.models import Token
 from django.contrib.auth import authenticate
-
-# from myproject.snippets.models import MyUser
+from snippets.serializers import BookSerializer
 
 
 class UserViewSet(viewsets.ReadOnlyModelViewSet):
     """
     This viewset automatically provides `list` and `retrieve` actions.
     """
+
     permission_classes = [permissions.IsAuthenticated, IsOwnerOrReadOnly]
     queryset = MyUser.objects.all()
     serializer_class = UserSerializer
@@ -64,7 +65,8 @@ class UserViewSet(viewsets.ReadOnlyModelViewSet):
 class SnippetViewSet(viewsets.ModelViewSet):
     queryset = Snippet.objects.all()
     serializer_class = SnippetSerializer
-    permission_classes = [permissions.IsAuthenticatedOrReadOnly, IsOwnerOrReadOnly]
+    authentication_classes = [SessionAuthentication, BasicAuthentication]
+    permission_classes = [permissions.IsAuthenticated]
 
     @action(detail=True, renderer_classes=[renderers.StaticHTMLRenderer])
     def highlight(self, request, *args, **kwargs):
@@ -76,36 +78,22 @@ class SnippetViewSet(viewsets.ModelViewSet):
 
 
 class LoginView(APIView):
-    def post(self, request):
-        # serializer = self.serializer_class(
-        #     data=request.data, context={"request": request}
-        # )
+    authentication_classes = []
+    permission_classes = [permissions.AllowAny]
 
-        # # print(request.user)
-        # username = request.data.username
-        # password = request.data.password
-        # serializer.is_valid(raise_exception=True)
-        # user = serializer.validated_data["user"]
-        # token, created = Token.objects.get_or_create(user=user)
-        # return Response({"token": token.key, "user_id": user.pk, "email": user.email})
-        # return Response(request.data, status=status.HTTP_201_CREATED)
+    def post(self, request):
         serializer = UserLoginSerializer(data=request.data)
         if serializer.is_valid():
             user = authenticate(
                 request,
-                username=serializer.validated_data["email"],
+                username=serializer.validated_data["username"],
                 password=serializer.validated_data["password"],
             )
             if user:
                 token, created = Token.objects.get_or_create(user=user)
-                print(token)
                 # refresh = TokenObtainPairSerializer.get_token(user)
-                data = {
-                    # 'refresh_token': str(refresh),
-                    'access_token': str(token)
-                }
+                data = {"access_token": str(token), "user_id": str(user.id)}
                 return Response(data, status=status.HTTP_200_OK)
-            # return Response(data, status=status.HTTP_200_OK)
 
         return Response(
             {"error_message": "Email or password is incorrect!", "error_code": 400},
@@ -114,6 +102,8 @@ class LoginView(APIView):
 
 
 class RegisterView(APIView):
+    permission_classes = []
+
     def post(self, request):
         serializer = UserSerializer(data=request.data)
         if serializer.is_valid():
@@ -133,3 +123,10 @@ class RegisterView(APIView):
                 },
                 status=status.HTTP_400_BAD_REQUEST,
             )
+
+
+class BookViewSet(viewsets.ModelViewSet):
+    permissions_classes = [permissions.IsAuthenticated]
+    # model = Book
+    queryset = Book.objects.all()
+    serializer_class = BookSerializer

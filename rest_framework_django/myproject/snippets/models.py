@@ -50,6 +50,25 @@ class Snippet(models.Model):
 from django.contrib.auth.models import AbstractUser, AbstractBaseUser, BaseUserManager
 
 
+class Category(models.Model):
+    # id= models.IntegerField(null=True, blank=True)
+    name= models.CharField(max_length=100)
+    
+    def __str__(self):
+        return self.name
+
+class Book(models.Model):
+    title= models.CharField(max_length=100)
+    author= models.CharField(max_length=100)
+    year = models.IntegerField(null=True, blank=True)
+    Category = models.ForeignKey(Category,on_delete=models.CASCADE)
+    
+    class Meta:
+        ordering=["title"];
+
+
+
+    
 class MyUser(AbstractUser):
     pass
     # last_login = None
