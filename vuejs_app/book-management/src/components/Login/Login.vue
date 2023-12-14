@@ -2,9 +2,68 @@
 import { ref } from 'vue';
 import './Login.css'
 import loginImg from "../../assets/login.svg";
-const username = ref('')
-const password = ref('')
-const handleLogin = ()=>{
+import { useRoute, useRouter } from 'vue-router';
+import Home from '../Home/Home.vue';
+import axios from 'axios'
+const username = ref('viet')
+const password = ref('viet1234')
+const router = useRouter();
+const handleLogin = async () => {
+
+  const config = {
+    headers:
+    {
+      'Accept': 'application/json',
+      'Content-Type': 'application/json'
+    }
+  }
+  if (username.value == "" || password.value == "") {
+    alert('Please enter a username and password')
+    return
+  }
+  // Rest Django token:
+  axios.post('http://127.0.0.1:8000/login/', { 'username': username.value, 'password': password.value }, config).then(
+    (data) => {
+      localStorage.setItem('token', JSON.stringify(data.data.access_token))
+      localStorage.setItem('user_id', JSON.stringify(data.data.user_id))
+      // console.log(data)
+      router.push({ path: '/' })
+      alert('Login successful')
+    }
+  ).catch(() => {
+    alert('Authentication failed')
+  })
+  // jwt token
+  /*
+    const response = await fetch('http://127.0.0.1:8000/api/token/', {
+      method: 'POST',
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({ 'username': username.value, 'password': password.value })
+    })
+    if (response.status == 200) {
+  
+      // router.push({name:'home'});
+      
+      await router.push({ path: '/' })
+    }
+    else {
+      alert('Ban da dang nhap sai')
+    }
+  */
+  // axios.post('http://127.0.0.1:8000/api/token/', { 'username': username.value, 'password': password.value }, config).then(
+  //   (data) => {
+  //     localStorage.setItem('token', JSON.stringify(data.data))
+  //     // console.log(data)
+  //     router.push({path:'/'})
+  //     alert('Login successful')
+  //   }
+  // ).catch(() => {
+  //   alert('Authentication failed')
+  // })
+
 
 }
 </script>
@@ -18,16 +77,16 @@ const handleLogin = ()=>{
       <div class="form">
         <div class="form-group">
           <label htmlFor="username">Username</label>
-          <input type="text" name="username" placeholder="username" v-model="username"/>
+          <input type="text" name="username" placeholder="username" v-model="username" />
         </div>
         <div class="form-group">
           <label htmlFor="password">Password</label>
-          <input type="password" name="password" placeholder="password"  v-model="password"/>
+          <input type="password" name="password" placeholder="password" v-model="password" />
         </div>
       </div>
     </div>
     <div class="footer">
-      <button type="button" class="btn" @click="handleLogin">
+      <button type="button" @click="handleLogin">
         Login
       </button>
     </div>

@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from snippets.models import Snippet, LANGUAGE_CHOICES, STYLE_CHOICES
+from snippets.models import Snippet, LANGUAGE_CHOICES, STYLE_CHOICES, Book
 
 
 class SnippetSerializer(serializers.ModelSerializer):
@@ -10,7 +10,17 @@ class SnippetSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Snippet
-        fields = ["id","url" , 'highlight',"title", "code", "linenos", "language", "style", "owner"]
+        fields = [
+            "id",
+            "url",
+            "highlight",
+            "title",
+            "code",
+            "linenos",
+            "language",
+            "style",
+            "owner",
+        ]
 
     def create(self, validated_data):
         return Snippet.objects.create(**validated_data)
@@ -28,6 +38,12 @@ class SnippetSerializer(serializers.ModelSerializer):
         return instance
 
 
+class BookSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Book
+        fields = ["title", "author", "year"]
+
+
 from django.contrib.auth.models import User
 from .models import MyUser
 
@@ -37,16 +53,20 @@ from .models import MyUser
 #         many=True, queryset=Snippet.objects.all()
 #     )
 
+
 #     class Meta:
 #         model = User
 #         fields = ["id", "username", "snippets"]
 class UserSerializer(serializers.HyperlinkedModelSerializer):
-    snippets = serializers.HyperlinkedRelatedField(many=True, view_name='snippet-detail', read_only=True)
+    snippets = serializers.HyperlinkedRelatedField(
+        many=True, view_name="snippet-detail", read_only=True
+    )
 
     class Meta:
         model = MyUser
-        fields = ['username', 'email', 'password', 'snippets']
+        fields = ["username", "email", "snippets"]
+
 
 class UserLoginSerializer(serializers.Serializer):
-    email = serializers.EmailField(required=True)
+    username = serializers.CharField(required=True)
     password = serializers.CharField(required=True)
