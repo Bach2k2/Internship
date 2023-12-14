@@ -1,17 +1,21 @@
 <script setup lang="ts">
-import {ref, watchEffect} from 'vue'
+import { ref, watchEffect } from 'vue'
 interface Book {
     title: string
     author: string
     year: number
+    category: string
 }
-const books = ref<Book[]|null>(null)
+const books = ref<Book[] | null>(null)
 watchEffect(async () => {
     try {
         const response = await fetch("http://127.0.0.1:8000/books/")
         if (response.ok) {
-            books.value = await response.json().then(data=> books.value =data.results);
-            console.log('ok',books.value);
+            await response.json().then(data => {
+                books.value = data.results
+                console.log('ok', data.results);
+            });
+
         } else {
             console.error('Failed to fetch users:', response.statusText);
         }
