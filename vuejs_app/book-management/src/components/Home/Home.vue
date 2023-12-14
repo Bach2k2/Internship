@@ -1,12 +1,34 @@
 <script setup lang="ts">
+import { onMounted } from 'vue';
 import Header from '../Header/Header.vue';
 import './Home.css'
+import axios from 'axios';
+
+onMounted(async () => {
+    const token = await localStorage.getItem('token');
+    console.log(token);
+    const user_id = await localStorage.getItem('user_id');
+    console.log(user_id);
+    const config = {
+        headers: {
+            'Content-Type': 'application/json',
+            'Authorization': `Token ${token}`
+        },
+    }
+    try {
+        const res = await axios.get(`http://127.0.0.1:8000/users/${user_id}`, config);
+
+
+    } catch (e) {
+    }
+})
+
 </script>
 
 <template>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <!-- <header id="header"/> -->
-    <Header/>
+    <Header />
     <main>
         <div class="intro">
             <h1>MY DANANG BOOKSTORES</h1>

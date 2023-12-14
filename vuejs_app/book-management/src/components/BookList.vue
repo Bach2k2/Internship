@@ -1,24 +1,25 @@
 <script setup lang="ts">
-import {ref} from 'vue'
+import {ref, watchEffect} from 'vue'
 interface Book {
     title: string
     author: string
     year: number
 }
-// const book = ref<Book[]|null>(null)
-// const url
-// const { data: books } = await fetch<Book>("https://reqres.in/api/users", {
-//     headers: {
-//         // Authorization: `Bearer ${tokenCookie.value}`,
-//     }
-// })
-const books = [
-    {title:'1', author:'haha',year:2002},
-    {title:'2', author:'haha2',year:2002},
-    {title:'3', author:'haha3',year:2002},
-    {title:'4', author:'hello',year:2002}
-]
+const books = ref<Book[]|null>(null)
+watchEffect(async () => {
+    try {
+        const response = await fetch("http://127.0.0.1:8000/books/")
+        if (response.ok) {
+            books.value = await response.json().then(data=> books.value =data.results);
+            console.log('ok',books.value);
+        } else {
+            console.error('Failed to fetch users:', response.statusText);
+        }
+    } catch (e) {
+        console.error('Failed to fetch users:', e);
+    }
 
+})
 </script>
 
 <template>
