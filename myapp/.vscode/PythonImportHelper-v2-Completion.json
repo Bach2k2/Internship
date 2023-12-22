@@ -480,7 +480,7 @@
         "kind": 6,
         "importPath": "novels.admin",
         "description": "novels.admin",
-        "peekOfCode": "class NovelAdmin(admin.ModelAdmin):\n    fields = [\"title\", \"published_date\", \"year\", \"status\", \"category\"]\n    list_display = [\"title\", \"published_date\", \"year\", \"status\", \"category\"]\n    # def published_recently(self, obj):\n    #     return obj.was_published_recently()\n    # published_recently.boolean = True\n    # published_recently.short_description = \"Published recently?\"\n    # list_filter = (\"status\", \"category\")\n    # search_fields = (\"title\", \"category__name\")\n    # date_hierarchy = \"published_date\"",
+        "peekOfCode": "class NovelAdmin(admin.ModelAdmin):\n    fields = [\"title\", \"published_date\", \"year\", \"status\", \"category\"]\n    list_display = [\"title\", \"published_date\", \"year\", \"status\", \"display_category\"]\n    def display_category(self, obj):\n        return obj.category.name if obj.category else None\n    # def published_recently(self, obj):\n    #     return obj.was_published_recently()\n    # published_recently.boolean = True\n    # published_recently.short_description = \"Published recently?\"\n    # list_filter = (\"status\", \"category\")",
         "detail": "novels.admin",
         "documentation": {}
     },
@@ -489,7 +489,7 @@
         "kind": 6,
         "importPath": "novels.admin",
         "description": "novels.admin",
-        "peekOfCode": "class CategoryAdmin(admin.ModelAdmin):\n    list_display = (\"name\",)\n    search_fields = (\"name\",)\nclass ChapterAdmin(admin.ModelAdmin):\n    list_display = [\"title\", \"content\"]\n    search_fields = [\"title\", \"content\"]\nadmin.site.register(Novel,NovelAdmin)\nadmin.site.register(Category)\nadmin.site.register(Chapter,ChapterAdmin)",
+        "peekOfCode": "class CategoryAdmin(admin.ModelAdmin):\n    list_display = [\"name\"]\n    search_fields = (\"name\",)\nclass ChapterAdmin(admin.ModelAdmin):\n    list_display = [\"title\", \"content\"]\n    search_fields = [\"title\", \"content\"]\nadmin.site.register(Novel,NovelAdmin)\nadmin.site.register(Category)\nadmin.site.register(Chapter,ChapterAdmin)",
         "detail": "novels.admin",
         "documentation": {}
     },

@@ -7,7 +7,9 @@ from .models import *
 
 class NovelAdmin(admin.ModelAdmin):
     fields = ["title", "published_date", "year", "status", "category"]
-    list_display = ["title", "published_date", "year", "status", "category"]
+    list_display = ["title", "published_date", "year", "status", "display_category"]
+    def display_category(self, obj):
+        return obj.category.name if obj.category else None
 
     # def published_recently(self, obj):
     #     return obj.was_published_recently()
@@ -19,7 +21,7 @@ class NovelAdmin(admin.ModelAdmin):
 
 
 class CategoryAdmin(admin.ModelAdmin):
-    list_display = ("name",)
+    list_display = ["name"]
     search_fields = ("name",)
 
 
