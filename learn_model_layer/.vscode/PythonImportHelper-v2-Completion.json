@@ -1,5 +1,54 @@
 [
     {
+        "label": "django.contrib.auth.models",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "AbstractUser",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "Group",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
         "label": "migrations",
         "importPath": "django.db",
         "description": "django.db",
@@ -29,6 +78,15 @@
         "description": "django.db",
         "isExtraImport": true,
         "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "django.utils.timezone",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django.utils.timezone",
+        "description": "django.utils.timezone",
+        "detail": "django.utils.timezone",
         "documentation": {}
     },
     {
@@ -144,6 +202,22 @@
         "documentation": {}
     },
     {
+        "label": "serializers",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
         "label": "TestCase",
         "importPath": "django.test",
         "description": "django.test",
@@ -168,6 +242,14 @@
         "documentation": {}
     },
     {
+        "label": "JsonResponse",
+        "importPath": "django.http",
+        "description": "django.http",
+        "isExtraImport": true,
+        "detail": "django.http",
+        "documentation": {}
+    },
+    {
         "label": "render",
         "importPath": "django.shortcuts",
         "description": "django.shortcuts",
@@ -189,6 +271,54 @@
         "description": "django.views.generic",
         "isExtraImport": true,
         "detail": "django.views.generic",
+        "documentation": {}
+    },
+    {
+        "label": "Response",
+        "importPath": "rest_framework.response",
+        "description": "rest_framework.response",
+        "isExtraImport": true,
+        "detail": "rest_framework.response",
+        "documentation": {}
+    },
+    {
+        "label": "make_password",
+        "importPath": "django.contrib.auth.hashers",
+        "description": "django.contrib.auth.hashers",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.hashers",
+        "documentation": {}
+    },
+    {
+        "label": "APIView",
+        "importPath": "rest_framework.views",
+        "description": "rest_framework.views",
+        "isExtraImport": true,
+        "detail": "rest_framework.views",
+        "documentation": {}
+    },
+    {
+        "label": "api_view",
+        "importPath": "rest_framework.decorators",
+        "description": "rest_framework.decorators",
+        "isExtraImport": true,
+        "detail": "rest_framework.decorators",
+        "documentation": {}
+    },
+    {
+        "label": "csrf_exempt",
+        "importPath": "django.views.decorators.csrf",
+        "description": "django.views.decorators.csrf",
+        "isExtraImport": true,
+        "detail": "django.views.decorators.csrf",
+        "documentation": {}
+    },
+    {
+        "label": "JSONParser",
+        "importPath": "rest_framework.parsers",
+        "description": "rest_framework.parsers",
+        "isExtraImport": true,
+        "detail": "rest_framework.parsers",
         "documentation": {}
     },
     {
@@ -225,23 +355,6 @@
         "documentation": {}
     },
     {
-        "label": "warnings",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "warnings",
-        "description": "warnings",
-        "detail": "warnings",
-        "documentation": {}
-    },
-    {
-        "label": "management",
-        "importPath": "django.core",
-        "description": "django.core",
-        "isExtraImport": true,
-        "detail": "django.core",
-        "documentation": {}
-    },
-    {
         "label": "sys",
         "kind": 6,
         "isExtraImport": true,
@@ -255,8 +368,17 @@
         "kind": 6,
         "importPath": "bookshop_management.books.migrations.0001_initial",
         "description": "bookshop_management.books.migrations.0001_initial",
-        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Book',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('title', models.CharField(max_length=100)),",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n        ('auth', '0012_alter_user_first_name_max_length'),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Book',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),",
         "detail": "bookshop_management.books.migrations.0001_initial",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "bookshop_management.books.migrations.0002_user_last_login",
+        "description": "bookshop_management.books.migrations.0002_user_last_login",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('books', '0001_initial'),\n    ]\n    operations = [\n        migrations.AddField(\n            model_name='user',\n            name='last_login',\n            field=models.DateTimeField(blank=True, null=True, verbose_name='last login'),\n        ),",
+        "detail": "bookshop_management.books.migrations.0002_user_last_login",
         "documentation": {}
     },
     {
@@ -273,8 +395,53 @@
         "kind": 6,
         "importPath": "bookshop_management.books.models",
         "description": "bookshop_management.books.models",
-        "peekOfCode": "class Book(models.Model):\n    title = models.CharField(max_length=100)\n    author = models.CharField(max_length=50)\n    publish_date = models.DateField(auto_now_add=True)\n    content = models.CharField(max_length=2000)\n    def __unicode__(self):\n        return self.content",
+        "peekOfCode": "class Book(models.Model):\n    title = models.CharField(max_length=100)\n    author = models.CharField(max_length=50)\n    publish_date = models.DateField(auto_now_add=True)\n    content = models.CharField(max_length=2000)\n    def __unicode__(self):\n        return self.content\n    class Meta:\n        db_table = 'Book'\nclass User(AbstractUser):",
         "detail": "bookshop_management.books.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "kind": 6,
+        "importPath": "bookshop_management.books.models",
+        "description": "bookshop_management.books.models",
+        "peekOfCode": "class User(AbstractUser):\n    def __init__(self, *args, **kwargs):\n        super(User, self).__init__(*args, **kwargs)\n        # if self.is_superuser:\n        #     self.is_customer = False\n        #     self.is_admin = True\n    # Delete not use field\n    username = None\n    is_staff = None\n    is_superuser = None",
+        "detail": "bookshop_management.books.models",
+        "documentation": {}
+    },
+    {
+        "label": "UserSerializer",
+        "kind": 6,
+        "importPath": "bookshop_management.books.serializers",
+        "description": "bookshop_management.books.serializers",
+        "peekOfCode": "class UserSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = User\n        fields = ['email', 'password']\n        # extra_kwargs = {'password': {'write_only': True}}\nclass GroupSerializer(serializers.HyperlinkedModelSerializer):\n    class Meta:\n        model = Group\n        fields = ['url', 'name']\nclass UserLoginSerializer(serializers.Serializer):",
+        "detail": "bookshop_management.books.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "GroupSerializer",
+        "kind": 6,
+        "importPath": "bookshop_management.books.serializers",
+        "description": "bookshop_management.books.serializers",
+        "peekOfCode": "class GroupSerializer(serializers.HyperlinkedModelSerializer):\n    class Meta:\n        model = Group\n        fields = ['url', 'name']\nclass UserLoginSerializer(serializers.Serializer):\n    email = serializers.EmailField(required=True)\n    password = serializers.CharField(required=True)\nclass BooksSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Book",
+        "detail": "bookshop_management.books.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "UserLoginSerializer",
+        "kind": 6,
+        "importPath": "bookshop_management.books.serializers",
+        "description": "bookshop_management.books.serializers",
+        "peekOfCode": "class UserLoginSerializer(serializers.Serializer):\n    email = serializers.EmailField(required=True)\n    password = serializers.CharField(required=True)\nclass BooksSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Book\n        fields = ['title', 'author', 'publish_date', 'content']",
+        "detail": "bookshop_management.books.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "BooksSerializer",
+        "kind": 6,
+        "importPath": "bookshop_management.books.serializers",
+        "description": "bookshop_management.books.serializers",
+        "peekOfCode": "class BooksSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Book\n        fields = ['title', 'author', 'publish_date', 'content']",
+        "detail": "bookshop_management.books.serializers",
         "documentation": {}
     },
     {
@@ -282,7 +449,7 @@
         "kind": 5,
         "importPath": "bookshop_management.books.urls",
         "description": "bookshop_management.books.urls",
-        "peekOfCode": "app_name = \"books\"\nurlpatterns = [\n    path('',ListBookView.as_view(),name=\"list-books\" )\n]",
+        "peekOfCode": "app_name = \"books\"\nurlpatterns = [\n    path('api/books/', views.book_list),\n    path('api/books/<int:pk>', views.book_detail),\n    # path(\"api/\", include(\"rest_framework.urls\", namespace=\"rest_framework\")),\n    path('register',views.UserRegisterView.as_view(),name=\"register\"),\n]",
         "detail": "bookshop_management.books.urls",
         "documentation": {}
     },
@@ -291,7 +458,7 @@
         "kind": 5,
         "importPath": "bookshop_management.books.urls",
         "description": "bookshop_management.books.urls",
-        "peekOfCode": "urlpatterns = [\n    path('',ListBookView.as_view(),name=\"list-books\" )\n]",
+        "peekOfCode": "urlpatterns = [\n    path('api/books/', views.book_list),\n    path('api/books/<int:pk>', views.book_detail),\n    # path(\"api/\", include(\"rest_framework.urls\", namespace=\"rest_framework\")),\n    path('register',views.UserRegisterView.as_view(),name=\"register\"),\n]",
         "detail": "bookshop_management.books.urls",
         "documentation": {}
     },
@@ -300,7 +467,34 @@
         "kind": 6,
         "importPath": "bookshop_management.books.views",
         "description": "bookshop_management.books.views",
-        "peekOfCode": "class ListBookView(ListView):\n    model = Book\n    def get(self, request, *args, **kwargs):\n        template_name = \"books/list-books.html\"  # sẽ được tạo ở phần dưới\n        obj = {\"books\": Book.objects.all()}\n        return render(request, template_name, obj)\n# Create your views here.",
+        "peekOfCode": "class ListBookView(ListView):\n    model = Book\n    def get(self, request, *args, **kwargs):\n        template_name = \"books/list-books.html\"  # sẽ được tạo ở phần dưới\n        obj = {\"books\": Book.objects.all()}\n        return render(request, template_name, obj)\n# Create your views here.\nclass UserRegisterView(APIView):\n    permission_classes = []\n    def get_queryset(self):",
+        "detail": "bookshop_management.books.views",
+        "documentation": {}
+    },
+    {
+        "label": "UserRegisterView",
+        "kind": 6,
+        "importPath": "bookshop_management.books.views",
+        "description": "bookshop_management.books.views",
+        "peekOfCode": "class UserRegisterView(APIView):\n    permission_classes = []\n    def get_queryset(self):\n        return User.objects.all()  # Adjust the queryset based on your needs\n    # def get(self, request):\n    #     queryset = self.get_queryset()\n    #     # Your logic for handling GET requests (if needed)\n    #     return JsonResponse({\n    #         'message': 'This is the registration page.',\n    #     })",
+        "detail": "bookshop_management.books.views",
+        "documentation": {}
+    },
+    {
+        "label": "book_list",
+        "kind": 2,
+        "importPath": "bookshop_management.books.views",
+        "description": "bookshop_management.books.views",
+        "peekOfCode": "def book_list(request, format=None):\n    # if request.method == 'GET':\n    #     books = Book.objects.all()\n    #     serializer =BooksSerializer(books, many=True)\n    #     return JsonResponse(serializer.data, safe=False)\n    # elif request.method == 'POST':\n    #     data = JSONParser().parse(request)\n    #     serializer = BooksSerializer(data=data)\n    #     if serializer.is_valid():\n    #         serializer.save()",
+        "detail": "bookshop_management.books.views",
+        "documentation": {}
+    },
+    {
+        "label": "book_detail",
+        "kind": 2,
+        "importPath": "bookshop_management.books.views",
+        "description": "bookshop_management.books.views",
+        "peekOfCode": "def book_detail(request, pk, format=None):\n    \"\"\"\n    Retrieve, update or delete a code snippet.\n    \"\"\"\n    try:\n        book = Book.objects.get(pk=pk)\n    except Book.DoesNotExist:\n        return Response(status=status.HTTP_404_NOT_FOUND)\n    if request.method == 'GET':\n        serializer = BooksSerializer(book)",
         "detail": "bookshop_management.books.views",
         "documentation": {}
     },
@@ -318,7 +512,7 @@
         "kind": 5,
         "importPath": "bookshop_management.bookshop_management.settings",
         "description": "bookshop_management.bookshop_management.settings",
-        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/\n# SECURITY WARNING: keep the secret key used in production secret!\nSECRET_KEY = 'django-insecure-(=$+7#v8!81lo&cq)1vzrw5_7$&f8@_yb$$8msif6=3#s#jg6*'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [",
+        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/\n# SECURITY WARNING: keep the secret key used in production secret!\nSECRET_KEY = \"django-insecure-(=$+7#v8!81lo&cq)1vzrw5_7$&f8@_yb$$8msif6=3#s#jg6*\"\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [",
         "detail": "bookshop_management.bookshop_management.settings",
         "documentation": {}
     },
@@ -327,7 +521,7 @@
         "kind": 5,
         "importPath": "bookshop_management.bookshop_management.settings",
         "description": "bookshop_management.bookshop_management.settings",
-        "peekOfCode": "SECRET_KEY = 'django-insecure-(=$+7#v8!81lo&cq)1vzrw5_7$&f8@_yb$$8msif6=3#s#jg6*'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',",
+        "peekOfCode": "SECRET_KEY = \"django-insecure-(=$+7#v8!81lo&cq)1vzrw5_7$&f8@_yb$$8msif6=3#s#jg6*\"\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    \"django.contrib.admin\",\n    \"django.contrib.auth\",\n    \"django.contrib.contenttypes\",\n    \"django.contrib.sessions\",",
         "detail": "bookshop_management.bookshop_management.settings",
         "documentation": {}
     },
@@ -336,7 +530,7 @@
         "kind": 5,
         "importPath": "bookshop_management.bookshop_management.settings",
         "description": "bookshop_management.bookshop_management.settings",
-        "peekOfCode": "DEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',",
+        "peekOfCode": "DEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    \"django.contrib.admin\",\n    \"django.contrib.auth\",\n    \"django.contrib.contenttypes\",\n    \"django.contrib.sessions\",\n    \"django.contrib.messages\",\n    \"django.contrib.staticfiles\",",
         "detail": "bookshop_management.bookshop_management.settings",
         "documentation": {}
     },
@@ -345,7 +539,7 @@
         "kind": 5,
         "importPath": "bookshop_management.bookshop_management.settings",
         "description": "bookshop_management.bookshop_management.settings",
-        "peekOfCode": "ALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'books',",
+        "peekOfCode": "ALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    \"django.contrib.admin\",\n    \"django.contrib.auth\",\n    \"django.contrib.contenttypes\",\n    \"django.contrib.sessions\",\n    \"django.contrib.messages\",\n    \"django.contrib.staticfiles\",\n    \"rest_framework\",",
         "detail": "bookshop_management.bookshop_management.settings",
         "documentation": {}
     },
@@ -354,7 +548,7 @@
         "kind": 5,
         "importPath": "bookshop_management.bookshop_management.settings",
         "description": "bookshop_management.bookshop_management.settings",
-        "peekOfCode": "INSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'books',\n    'home',\n]",
+        "peekOfCode": "INSTALLED_APPS = [\n    \"django.contrib.admin\",\n    \"django.contrib.auth\",\n    \"django.contrib.contenttypes\",\n    \"django.contrib.sessions\",\n    \"django.contrib.messages\",\n    \"django.contrib.staticfiles\",\n    \"rest_framework\",\n    \"books\",\n    \"home\",",
         "detail": "bookshop_management.bookshop_management.settings",
         "documentation": {}
     },
@@ -363,7 +557,7 @@
         "kind": 5,
         "importPath": "bookshop_management.bookshop_management.settings",
         "description": "bookshop_management.bookshop_management.settings",
-        "peekOfCode": "MIDDLEWARE = [\n    'django.middleware.security.SecurityMiddleware',\n    'django.contrib.sessions.middleware.SessionMiddleware',\n    'django.middleware.common.CommonMiddleware',\n    'django.middleware.csrf.CsrfViewMiddleware',\n    'django.contrib.auth.middleware.AuthenticationMiddleware',\n    'django.contrib.messages.middleware.MessageMiddleware',\n    'django.middleware.clickjacking.XFrameOptionsMiddleware',\n]\nROOT_URLCONF = 'bookshop_management.urls'",
+        "peekOfCode": "MIDDLEWARE = [\n    \"django.middleware.security.SecurityMiddleware\",\n    \"django.contrib.sessions.middleware.SessionMiddleware\",\n    \"django.middleware.common.CommonMiddleware\",\n    \"django.middleware.csrf.CsrfViewMiddleware\",\n    \"django.contrib.auth.middleware.AuthenticationMiddleware\",\n    \"django.contrib.messages.middleware.MessageMiddleware\",\n    \"django.middleware.clickjacking.XFrameOptionsMiddleware\",\n]\nROOT_URLCONF = \"bookshop_management.urls\"",
         "detail": "bookshop_management.bookshop_management.settings",
         "documentation": {}
     },
@@ -372,7 +566,7 @@
         "kind": 5,
         "importPath": "bookshop_management.bookshop_management.settings",
         "description": "bookshop_management.bookshop_management.settings",
-        "peekOfCode": "ROOT_URLCONF = 'bookshop_management.urls'\nTEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.debug',\n                'django.template.context_processors.request',",
+        "peekOfCode": "ROOT_URLCONF = \"bookshop_management.urls\"\nTEMPLATES = [\n    {\n        \"BACKEND\": \"django.template.backends.django.DjangoTemplates\",\n        \"DIRS\": [],\n        \"APP_DIRS\": True,\n        \"OPTIONS\": {\n            \"context_processors\": [\n                \"django.template.context_processors.debug\",\n                \"django.template.context_processors.request\",",
         "detail": "bookshop_management.bookshop_management.settings",
         "documentation": {}
     },
@@ -381,7 +575,7 @@
         "kind": 5,
         "importPath": "bookshop_management.bookshop_management.settings",
         "description": "bookshop_management.bookshop_management.settings",
-        "peekOfCode": "TEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.debug',\n                'django.template.context_processors.request',\n                'django.contrib.auth.context_processors.auth',",
+        "peekOfCode": "TEMPLATES = [\n    {\n        \"BACKEND\": \"django.template.backends.django.DjangoTemplates\",\n        \"DIRS\": [],\n        \"APP_DIRS\": True,\n        \"OPTIONS\": {\n            \"context_processors\": [\n                \"django.template.context_processors.debug\",\n                \"django.template.context_processors.request\",\n                \"django.contrib.auth.context_processors.auth\",",
         "detail": "bookshop_management.bookshop_management.settings",
         "documentation": {}
     },
@@ -390,7 +584,16 @@
         "kind": 5,
         "importPath": "bookshop_management.bookshop_management.settings",
         "description": "bookshop_management.bookshop_management.settings",
-        "peekOfCode": "WSGI_APPLICATION = 'bookshop_management.wsgi.application'\n# Database\n# https://docs.djangoproject.com/en/3.2/ref/settings/#databases\nDATABASES = {\n    # 'default': {\n    #     'ENGINE': 'django.db.backends.sqlite3',\n    #     'NAME': BASE_DIR / 'db.sqlite3',\n    # }\n    'default':{\n        'ENGINE': 'django.db.backends.mysql',",
+        "peekOfCode": "WSGI_APPLICATION = \"bookshop_management.wsgi.application\"\nAUTH_USER_MODEL = 'books.user'\n# Database\n# https://docs.djangoproject.com/en/3.2/ref/settings/#databases\nDATABASES = {\n    # 'default': {\n    #     'ENGINE': 'django.db.backends.sqlite3',\n    #     'NAME': BASE_DIR / 'db.sqlite3',\n    # }\n    \"default\": {",
+        "detail": "bookshop_management.bookshop_management.settings",
+        "documentation": {}
+    },
+    {
+        "label": "AUTH_USER_MODEL",
+        "kind": 5,
+        "importPath": "bookshop_management.bookshop_management.settings",
+        "description": "bookshop_management.bookshop_management.settings",
+        "peekOfCode": "AUTH_USER_MODEL = 'books.user'\n# Database\n# https://docs.djangoproject.com/en/3.2/ref/settings/#databases\nDATABASES = {\n    # 'default': {\n    #     'ENGINE': 'django.db.backends.sqlite3',\n    #     'NAME': BASE_DIR / 'db.sqlite3',\n    # }\n    \"default\": {\n        \"ENGINE\": \"django.db.backends.mysql\",",
         "detail": "bookshop_management.bookshop_management.settings",
         "documentation": {}
     },
@@ -399,7 +602,7 @@
         "kind": 5,
         "importPath": "bookshop_management.bookshop_management.settings",
         "description": "bookshop_management.bookshop_management.settings",
-        "peekOfCode": "DATABASES = {\n    # 'default': {\n    #     'ENGINE': 'django.db.backends.sqlite3',\n    #     'NAME': BASE_DIR / 'db.sqlite3',\n    # }\n    'default':{\n        'ENGINE': 'django.db.backends.mysql',\n        'NAME':'bookshop_management',\n        'USER':'root',\n        'PASSWORD':'bach2002',",
+        "peekOfCode": "DATABASES = {\n    # 'default': {\n    #     'ENGINE': 'django.db.backends.sqlite3',\n    #     'NAME': BASE_DIR / 'db.sqlite3',\n    # }\n    \"default\": {\n        \"ENGINE\": \"django.db.backends.mysql\",\n        \"NAME\": \"bookshop_management\",\n        \"USER\": \"root\",\n        \"PASSWORD\": \"bach2002\",",
         "detail": "bookshop_management.bookshop_management.settings",
         "documentation": {}
     },
@@ -408,7 +611,16 @@
         "kind": 5,
         "importPath": "bookshop_management.bookshop_management.settings",
         "description": "bookshop_management.bookshop_management.settings",
-        "peekOfCode": "AUTH_PASSWORD_VALIDATORS = [\n    {\n        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',\n    },\n    {\n        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',\n    },\n    {\n        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',\n    },",
+        "peekOfCode": "AUTH_PASSWORD_VALIDATORS = [\n    {\n        \"NAME\": \"django.contrib.auth.password_validation.UserAttributeSimilarityValidator\",\n    },\n    {\n        \"NAME\": \"django.contrib.auth.password_validation.MinimumLengthValidator\",\n    },\n    {\n        \"NAME\": \"django.contrib.auth.password_validation.CommonPasswordValidator\",\n    },",
+        "detail": "bookshop_management.bookshop_management.settings",
+        "documentation": {}
+    },
+    {
+        "label": "REST_FRAMEWORK",
+        "kind": 5,
+        "importPath": "bookshop_management.bookshop_management.settings",
+        "description": "bookshop_management.bookshop_management.settings",
+        "peekOfCode": "REST_FRAMEWORK = {\n    # Use Django's standard `django.contrib.auth` permissions,\n    # or allow read-only access for unauthenticated users.\n    'DEFAULT_PERMISSION_CLASSES': [\n        'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly'\n    ]\n}\n# Internationalization\n# https://docs.djangoproject.com/en/3.2/topics/i18n/\nLANGUAGE_CODE = \"en-us\"",
         "detail": "bookshop_management.bookshop_management.settings",
         "documentation": {}
     },
@@ -417,7 +629,7 @@
         "kind": 5,
         "importPath": "bookshop_management.bookshop_management.settings",
         "description": "bookshop_management.bookshop_management.settings",
-        "peekOfCode": "LANGUAGE_CODE = 'en-us'\nTIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_L10N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/3.2/howto/static-files/\nSTATIC_URL = '/static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field",
+        "peekOfCode": "LANGUAGE_CODE = \"en-us\"\nTIME_ZONE = \"UTC\"\nUSE_I18N = True\nUSE_L10N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/3.2/howto/static-files/\nSTATIC_URL = \"/static/\"\n# Default primary key field type\n# https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field",
         "detail": "bookshop_management.bookshop_management.settings",
         "documentation": {}
     },
@@ -426,7 +638,7 @@
         "kind": 5,
         "importPath": "bookshop_management.bookshop_management.settings",
         "description": "bookshop_management.bookshop_management.settings",
-        "peekOfCode": "TIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_L10N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/3.2/howto/static-files/\nSTATIC_URL = '/static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "peekOfCode": "TIME_ZONE = \"UTC\"\nUSE_I18N = True\nUSE_L10N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/3.2/howto/static-files/\nSTATIC_URL = \"/static/\"\n# Default primary key field type\n# https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = \"django.db.models.BigAutoField\"",
         "detail": "bookshop_management.bookshop_management.settings",
         "documentation": {}
     },
@@ -435,7 +647,7 @@
         "kind": 5,
         "importPath": "bookshop_management.bookshop_management.settings",
         "description": "bookshop_management.bookshop_management.settings",
-        "peekOfCode": "USE_I18N = True\nUSE_L10N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/3.2/howto/static-files/\nSTATIC_URL = '/static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "peekOfCode": "USE_I18N = True\nUSE_L10N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/3.2/howto/static-files/\nSTATIC_URL = \"/static/\"\n# Default primary key field type\n# https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = \"django.db.models.BigAutoField\"",
         "detail": "bookshop_management.bookshop_management.settings",
         "documentation": {}
     },
@@ -444,7 +656,7 @@
         "kind": 5,
         "importPath": "bookshop_management.bookshop_management.settings",
         "description": "bookshop_management.bookshop_management.settings",
-        "peekOfCode": "USE_L10N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/3.2/howto/static-files/\nSTATIC_URL = '/static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "peekOfCode": "USE_L10N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/3.2/howto/static-files/\nSTATIC_URL = \"/static/\"\n# Default primary key field type\n# https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = \"django.db.models.BigAutoField\"",
         "detail": "bookshop_management.bookshop_management.settings",
         "documentation": {}
     },
@@ -453,7 +665,7 @@
         "kind": 5,
         "importPath": "bookshop_management.bookshop_management.settings",
         "description": "bookshop_management.bookshop_management.settings",
-        "peekOfCode": "USE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/3.2/howto/static-files/\nSTATIC_URL = '/static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "peekOfCode": "USE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/3.2/howto/static-files/\nSTATIC_URL = \"/static/\"\n# Default primary key field type\n# https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = \"django.db.models.BigAutoField\"",
         "detail": "bookshop_management.bookshop_management.settings",
         "documentation": {}
     },
@@ -462,7 +674,7 @@
         "kind": 5,
         "importPath": "bookshop_management.bookshop_management.settings",
         "description": "bookshop_management.bookshop_management.settings",
-        "peekOfCode": "STATIC_URL = '/static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "peekOfCode": "STATIC_URL = \"/static/\"\n# Default primary key field type\n# https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = \"django.db.models.BigAutoField\"",
         "detail": "bookshop_management.bookshop_management.settings",
         "documentation": {}
     },
@@ -471,7 +683,7 @@
         "kind": 5,
         "importPath": "bookshop_management.bookshop_management.settings",
         "description": "bookshop_management.bookshop_management.settings",
-        "peekOfCode": "DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "peekOfCode": "DEFAULT_AUTO_FIELD = \"django.db.models.BigAutoField\"",
         "detail": "bookshop_management.bookshop_management.settings",
         "documentation": {}
     },
@@ -480,7 +692,7 @@
         "kind": 5,
         "importPath": "bookshop_management.bookshop_management.urls",
         "description": "bookshop_management.bookshop_management.urls",
-        "peekOfCode": "urlpatterns = [\n    path(\"\", include(\"home.urls\")),\n    path(\"admin/\", admin.site.urls),\n    path(\"books/\", include(\"books.urls\")),\n]",
+        "peekOfCode": "urlpatterns = [\n    # path(\"\", include(\"home.urls\")),\n    path(\"admin/\", admin.site.urls),\n    path(\"\", include(\"books.urls\")),\n]",
         "detail": "bookshop_management.bookshop_management.urls",
         "documentation": {}
     },
